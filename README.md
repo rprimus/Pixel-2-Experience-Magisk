@@ -38,6 +38,7 @@ For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/a
 - Nexus 5
 - Nexus 5x on 8.1.0
 - Samsung Galaxy A5 (2017) LOS 15.1
+- Samsung Galaxy S6
 - Samsung Galaxy S8 Exynos - weather app crashes but no other issues found
 - Sony Xperia Z2 on 8.1.0 Resurrection Remix Oreo
 - Sony Xperia Z3 on Omni 8.1
@@ -48,7 +49,8 @@ For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/a
 - Xiaomi Mi 5X MIUI 9.2.2.0 Android 7.1
 - Xiaomi Mi A1 on 8.0.0 Oreo Stock ROM (tissot)
 - Xiaomi Mi A1 on Pixel Experience ROM 8.1.0
-- Xiaomi Mi Max 2 running LOS 14.1 
+- Xiaomi Mi Max 2 running LOS 14.1
+- Xiaomi Mi Mix 2
 - Xiaomi Mi Note 2 with MIUI 9
 - Zuk Z2 Pro on Aex 5.2 Oreo
 - Zuk Z2 Pro in Resurrection Remix v.6.0.0 and Aex 5.3
