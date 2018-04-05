@@ -1,10 +1,10 @@
-### Pixel 2 Experience
+## Pixel 2 Experience
 I made a compilation of the different mods and came up with this Pixel 2 Experience module which can be flashed with other devices on Nougat.
 
-### Information
+## Information
 Searching around the internet, I've seen several mods on XDA, GitHub and other websites which have extracted files from the Pixel 2 devices. I've decided to gather them and compiled them all into a single Magisk Module. This module can be flashed with other devices on Oreo as well.
 
-### Features
+## Features
 - Modded Pixel 2 Launcher by @paphonb | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393) | [Telegram channel for Launcher support](https://t.me/MPixelLauncher2)
 - Ruthless Pixel Launcher by @shubbyy (with icon pack support among other lovely features) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903/) | [Telegram channel for Launcher support](https://t.me/RPLauncher)
 - Pixel accent (in system/vendor/overlay/Pixel)
@@ -16,13 +16,13 @@ Searching around the internet, I've seen several mods on XDA, GitHub and other w
 - EIS support
 - Enables Night Light support
 
-### Latest changelog
+## Latest changelog
 v3.0
 - use Unity Installer functionality to allow users to choose between launchers
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
 
-### Compatibility
+## Compatibility
 - Cherry Mobile G1 on 8.1.0 LOS 15.1 (seed)
 - HTC U11
 - Huawei P10 with EMUI 8.0 (8.0.0.365) (c432) 
@@ -55,7 +55,7 @@ For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/a
 
 Provide feedback via the XDA thread by inputting your phone model, current ROM. Feel free to report if it works on other devices as well. It should work on other devices as long as they are close to stock (Stock/Custom ROMs).
 
-### Thanks
+## Thanks
 Thanks to these people!
 - @Zackptg5 for helping out with the Unity Installer | [XDA guide](https://forum.xda-developers.com/android/software/guide-volume-key-selection-flashable-zip-t3773410)
 - @Rom for helping out the install.sh codes | [XDA profile](https://forum.xda-developers.com/member.php?u=5332893)
@@ -69,6 +69,6 @@ Thanks to these people!
 LICENSE
 Copyright © 2018 joeyhuab. Licensed under the GNU General Public License v3.
 
-### [XDA Portal feature](https://www.xda-developers.com/pixel-2-experience-magisk-module/)
-### [XDA Official thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
-### [Github source](https://github.com/joeyhuab/Pixel-2-Experience-Magisk/)
+## [XDA Portal feature](https://www.xda-developers.com/pixel-2-experience-magisk-module/)
+## [XDA Official thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
+## [Github source](https://github.com/joeyhuab/Pixel-2-Experience-Magisk/)
