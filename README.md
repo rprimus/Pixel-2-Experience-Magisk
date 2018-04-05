@@ -6,7 +6,7 @@ Searching around the internet, I've seen several mods on XDA, GitHub and other w
 
 ### Features
 - Modded Pixel 2 Launcher by @paphonb | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393)
-- Ruthless Pixel Launcher by @shuby (with icon pack support among other lovely features) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903/)
+- Ruthless Pixel Launcher by @shubbyy (with icon pack support among other lovely features) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903/)
 - Pixel accent (in system/vendor/overlay/Pixel)
 - Google Lens enabled in Google Photos
 - Google Sans font used in Google Assistant, Pixel Launcher, System Update window, SetupWizard text, lockscreen clock
