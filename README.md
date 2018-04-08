@@ -26,7 +26,11 @@ v3.1
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
 
+## PROPER STEPS TO UNINSTALL MODULE
+In order to avoid bootloops after removing the module, you will need to remove all overlays. Go to Magisk Manager and uninstall the module then reboot to TWRP. Flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk] to remove all remaining overlays. You should be able to reboot without any problems afterwards!
+
 ## Compatibility
+- Asus Zenfone 2 Selfie, running RR 5.8.5 (Android 7.1.2)
 - Cherry Mobile G1 on 8.1.0 LOS 15.1 (seed)
 - HTC U11
 - Huawei P10 with EMUI 8.0 (8.0.0.365) (c432) 
@@ -42,6 +46,7 @@ For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/a
 - Nexus 5
 - Nexus 5x on 8.1.0
 - Samsung Galaxy A5 (2017) LOS 15.1
+- Samsung Galaxy Note 3 n9005 on 8.1 RR
 - Samsung Galaxy S6
 - Samsung Galaxy S8 Exynos - weather app crashes but no other issues found
 - Sony Xperia Z2 on 8.1.0 Resurrection Remix Oreo
@@ -56,6 +61,8 @@ For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/a
 - Xiaomi Mi Max 2 running LOS 14.1
 - Xiaomi Mi Mix 2
 - Xiaomi Mi Note 2 with MIUI 9
+- YU Yureka Black on AOSP Extended 7.1.2
+- YU Yureka Black on Resurrection Remix 7.1.2
 - Zuk Z2 Pro on Aex 5.2 Oreo
 - Zuk Z2 Pro in Resurrection Remix v.6.0.0 and Aex 5.3
 
