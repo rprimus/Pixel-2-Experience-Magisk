@@ -27,7 +27,7 @@ v3.1
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
 
 ## PROPER STEPS TO UNINSTALL MODULE
-In order to avoid bootloops after removing the module, you will need to remove all overlays. Go to Magisk Manager and uninstall the module then reboot to TWRP. Flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk] to remove all remaining overlays. You should be able to reboot without any problems afterwards!
+In order to avoid bootloops after removing the module, you will need to remove all overlays. Go to Magisk Manager and uninstall the module then reboot to TWRP. Flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk) to remove all remaining overlays. You should be able to reboot without any problems afterwards!
 
 ## Compatibility
 - Asus Zenfone 2 Selfie, running RR 5.8.5 (Android 7.1.2)
