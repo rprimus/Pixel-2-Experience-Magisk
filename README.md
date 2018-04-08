@@ -1,4 +1,4 @@
-### Pixel 2 Experience
+# Pixel 2 Experience
 I made a compilation of the different mods and came up with this Pixel 2 Experience module which can be flashed with other devices on Nougat.
 
 ## Information
