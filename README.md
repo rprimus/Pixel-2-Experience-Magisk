@@ -1,4 +1,4 @@
-## Pixel 2 Experience
+### Pixel 2 Experience
 I made a compilation of the different mods and came up with this Pixel 2 Experience module which can be flashed with other devices on Nougat.
 
 ## Information
@@ -16,9 +16,13 @@ Searching around the internet, I've seen several mods on XDA, GitHub and other w
 - EIS support
 - Enables Night Light support
 
+## Reminders
+To avoid Launcher being renamed/crashing, allow Phone and Storage permissions via Settings app.
+
 ## Latest changelog
-v3.0
-- use Unity Installer functionality to allow users to choose between launchers
+v3.1
+- fix Camera lag for Xiaomi Mi A1
+- update Ruthless Pixel Launcher
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
 
