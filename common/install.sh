@@ -10,7 +10,7 @@ esac
 chmod 755 $INSTALLER/common/keycheck
 
 keytest() {
-  ui_print "- Vol Key Test -"
+  ui_print " - Vol Key Test -"
   ui_print "   Press Vol Up:"
   (/system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $INSTALLER/events) || return 1
   return 0
@@ -59,7 +59,7 @@ if [ -z $LAUNCHER ]; then
     FUNCTION=chooseportold
     ui_print "   ! Legacy device detected! Using old keycheck method"
     ui_print " "
-    ui_print "- Vol Key Programming -"
+    ui_print " - Vol Key Programming -"
     ui_print "   Press Vol Up Again:"
     $FUNCTION "UP"
     ui_print "   Press Vol Down"
@@ -67,45 +67,45 @@ if [ -z $LAUNCHER ]; then
   fi
 
   ui_print " "
-  ui_print "- Do you want to install Launcher?"
-  ui_print "   Vol Up = Install launcher"
-  ui_print "   Vol Down = Do NOT install launcher"
+  ui_print "- Do you want to install a Launcher?"
+  ui_print "   Vol+ = Install Launcher"
+  ui_print "   Vol- = Do NOT install a Launcher"
   if $FUNCTION; then
     ui_print " "
-    ui_print "- Select Launcher -"
+    ui_print " - Select Launcher -"
     ui_print "   Choose which Pixel Launcher you want installed:"
-    ui_print "   Vol Up = Google Stock Launcher, Vol Down = Custom Launcher"
+    ui_print "   Vol+ = Stock, Vol- = Custom Launchers"
     if $FUNCTION; then 
       ui_print " "
-      ui_print "Installing Google stock launcher.."
+      ui_print "Installing Stock Launcher..."
       LAUNCHER=gpl
     else 
       ui_print " "
-      ui_print "- Select Custom Launcher -"
-      ui_print "   Choose which Pixel Launcher you want installed:"
-      ui_print "   Vol Up = Shubbyy's Ruthless, Vol Down = more options"
+      ui_print " - Select Custom Launcher -"
+      ui_print "   Choose which custom Pixel Launcher you want installed:"
+      ui_print "   Vol+ = Shubbyy's Ruthless, Vol- = More options"
       if $FUNCTION; then
         ui_print " "
-        ui_print "Installing Shubbyy's Ruthless Launcher.."
+        ui_print "Installing Shubbyy's Ruthless Launcher..."
         LAUNCHER=rpl
       else
         ui_print " "
-        ui_print "- Select More Custom Launcher -"
-        ui_print "   Choose which Pixel Launcher you want installed:"
-        ui_print "   Vol Up = paphonb's Modded, Vol Down = New Pixel 2 Launcher Mod"
+        ui_print " - Select Custom Launcher -"
+        ui_print "   Choose which custom Pixel Launcher you want installed:"
+        ui_print "   Vol+ = paphonb's Modded, Vol- = New Pixel 2 Launcher Mod"
         if $FUNCTION; then
           ui_print " "
-          ui_print "Installing Shubbyy's Ruthless Launcher.."
+          ui_print "Installing paphonb's Modded..."
           LAUNCHER=rpl
 	else
           ui_print " "
-          ui_print "Installing New Pixel 2 Launcher Mod.."
+          ui_print "Installing New Pixel 2 Launcher Mod..."
           LAUNCHER=npl
 	fi
       fi     
     fi
   else
-    ui_print "Not installing launcher.."
+    ui_print "Skip installing launchers..."
     LAUNCHER=none
     # this is stupid way to fix this script
     # using if [ -z $var ] on last cp_ch just breaks this script..?
@@ -116,4 +116,4 @@ else
   ui_print "   Pixel Launcher specified in zipname!"
 fi
 
-cp_ch $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
+cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk
