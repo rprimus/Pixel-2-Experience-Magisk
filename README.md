@@ -24,6 +24,7 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 ## Latest changelog
 v3.4.1
 - Update Amir's Launcher (Completely rewrite Google Now Feed code based on decompiled P Launcher) | https://t.me/appforks/787
+
 v3.4
 - bug fixes; eol conversion by @Zackptg5
 - add support for 4 launchers
