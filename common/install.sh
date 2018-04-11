@@ -3,7 +3,7 @@ case $(basename $ZIP) in
   *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
   *rpl*|*Rpl*|*RPL*) LAUNCHER=rpl;;
   *npl*|*Npl*|*NPL*) LAUNCHER=npl;;
-  *gpl*|*Gpl*|*GPL*) LAUNCHER=gpl;;
+  *apl*|*Apl*|*APL*) LAUNCHER=apl;;
 esac
 
 # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
@@ -77,8 +77,8 @@ if [ -z $LAUNCHER ]; then
     ui_print "   Vol+ = Stock, Vol- = Custom Launchers"
     if $FUNCTION; then 
       ui_print " "
-      ui_print "Installing Stock Launcher..."
-      LAUNCHER=gpl
+      ui_print "Installing paphonb's Modded Stock Pixel 2 Launcher..."
+      LAUNCHER=mpl
     else 
       ui_print " "
       ui_print " - Select Custom Launcher -"
@@ -86,17 +86,17 @@ if [ -z $LAUNCHER ]; then
       ui_print "   Vol+ = Shubbyy's Ruthless, Vol- = More options"
       if $FUNCTION; then
         ui_print " "
-        ui_print "Installing Shubbyy's Ruthless Launcher..."
+        ui_print "Installing Shubbyy's Ruthless Pixel Launcher..."
         LAUNCHER=rpl
       else
         ui_print " "
         ui_print " - Select Custom Launcher -"
         ui_print "   Choose which custom Pixel Launcher you want installed:"
-        ui_print "   Vol+ = paphonb's Modded, Vol- = New Pixel 2 Launcher Mod"
+        ui_print "   Vol+ = Amir's Launcher3, Vol- = New Pixel 2 Launcher Mod"
         if $FUNCTION; then
           ui_print " "
           ui_print "Installing paphonb's Modded..."
-          LAUNCHER=rpl
+          LAUNCHER=apl
 	else
           ui_print " "
           ui_print "Installing New Pixel 2 Launcher Mod..."
