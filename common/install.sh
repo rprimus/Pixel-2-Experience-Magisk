@@ -109,7 +109,4 @@ else
   ui_print "   Pixel Launcher specified in zipname!"
 fi
 
-if [ -z $LAUNCHER ]; then
-  mkdir -p $INSTALLER/system/priv-app/Pixel2Launcher
-  cp_ch $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
-fi
+cp_ch $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
