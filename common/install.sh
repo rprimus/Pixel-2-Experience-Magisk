@@ -1,9 +1,9 @@
 # GET RPL/MPL/NPL/GPL FROM ZIP NAME
 case $(basename $ZIP) in
-  *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
-  *rpl*|*Rpl*|*RPL*) LAUNCHER=rpl;;
-  *npl*|*Npl*|*NPL*) LAUNCHER=npl;;
   *apl*|*Apl*|*APL*) LAUNCHER=apl;;
+  *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
+  *npl*|*Npl*|*NPL*) LAUNCHER=npl;;
+  *rpl*|*Rpl*|*RPL*) LAUNCHER=rpl;;
 esac
 
 # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
