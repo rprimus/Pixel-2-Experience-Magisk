@@ -116,4 +116,4 @@ else
   ui_print "   Pixel Launcher specified in zipname!"
 fi
 
-cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk
+cp ch $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk
