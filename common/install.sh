@@ -111,5 +111,5 @@ fi
 
 if [ -z $LAUNCHER ]; then
   mkdir -p $INSTALLER/system/priv-app/Pixel2Launcher
-  cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
+  cp_ch $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
 fi
