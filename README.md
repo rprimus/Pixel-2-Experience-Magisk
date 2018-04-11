@@ -30,7 +30,10 @@ v3.4
 - allow users not to add a launcher via the module
 
 ## Latest Launcher versions
-- 
+- Customized Pixel Launcher = 1.7.4 | [Telegram channel](https://t.me/CPL_update_channel)
+- Modded Pixel 2 Launcher = 5.3.0 | Latest version in [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393)
+- Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks)
+- Ruthless Pixel Launcher = me_irl | [Telegram channel](https://t.me/ruthlaunch)
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
 
