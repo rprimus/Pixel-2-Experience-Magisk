@@ -95,7 +95,7 @@ if [ -z $LAUNCHER ]; then
         ui_print "   Vol+ = Amir's Launcher3, Vol- = New Pixel 2 Launcher Mod"
         if $FUNCTION; then
           ui_print " "
-          ui_print "Installing paphonb's Modded..."
+          ui_print "Installing Amir's Launcher3..."
           LAUNCHER=apl
 	else
           ui_print " "
