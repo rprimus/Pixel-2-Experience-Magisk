@@ -1,9 +1,9 @@
 # GET RPL/MPL/NPL/GPL FROM ZIP NAME
 case $(basename $ZIP) in
-  *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
-  *rpl*|*Rpl*|*RPL*) LAUNCHER=rpl;;
-  *npl*|*Npl*|*NPL*) LAUNCHER=npl;;
   *apl*|*Apl*|*APL*) LAUNCHER=apl;;
+  *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
+  *npl*|*Npl*|*NPL*) LAUNCHER=npl;;
+  *rpl*|*Rpl*|*RPL*) LAUNCHER=rpl;;
 esac
 
 # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
@@ -52,7 +52,6 @@ chooseportold() {
 
 ui_print " "
 if [ -z $LAUNCHER ]; then
-
   if keytest; then
     FUNCTION=chooseport
   else
@@ -65,7 +64,6 @@ if [ -z $LAUNCHER ]; then
     ui_print "   Press Vol Down"
     $FUNCTION "DOWN"
   fi
-
   ui_print " "
   ui_print "- Do you want to install a Launcher?"
   ui_print "   Vol+ = Install Launcher"
@@ -97,21 +95,16 @@ if [ -z $LAUNCHER ]; then
           ui_print " "
           ui_print "Installing Amir's Launcher3..."
           LAUNCHER=apl
-	else
+        else
           ui_print " "
           ui_print "Installing New Pixel 2 Launcher Mod..."
           LAUNCHER=npl
-	fi
+        fi
       fi     
     fi
   else
     ui_print "Skip installing launchers..."
-    LAUNCHER=none
-    # this is stupid way to fix this script
-    # using if [ -z $var ] on last cp_ch just breaks this script..?
-    # now it just tries to copy nothing..
   fi
-
 else
   ui_print "   Pixel Launcher specified in zipname!"
 fi
