@@ -1,7 +1,9 @@
-# GET RPL/MPL FROM ZIP NAME
+# GET RPL/MPL/NPL/GPL FROM ZIP NAME
 case $(basename $ZIP) in
   *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
   *rpl*|*Rpl*|*RPL*) LAUNCHER=rpl;;
+  *npl*|*Npl*|*NPL*) LAUNCHER=npl;;
+  *gpl*|*Gpl*|*GPL*) LAUNCHER=gpl;;
 esac
 
 # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
@@ -47,8 +49,10 @@ chooseportold() {
     abort "   Use name change method in TWRP"
   fi
 }
+
 ui_print " "
 if [ -z $LAUNCHER ]; then
+
   if keytest; then
     FUNCTION=chooseport
   else
@@ -61,15 +65,53 @@ if [ -z $LAUNCHER ]; then
     ui_print "   Press Vol Down"
     $FUNCTION "DOWN"
   fi
+
   ui_print " "
-  ui_print "- Select Launcher -"
-  ui_print "   Choose which Pixel Launcher you want installed:"
-  ui_print "   Vol Up = Shubbyy's Ruthless, Vol Down = paphonb's Modded"
-  if $FUNCTION; then 
-    LAUNCHER=rpl
-  else 
-    LAUNCHER=mpl
+  ui_print "- Do you want to install Launcher?"
+  ui_print "   Vol Up = Install launcher"
+  ui_print "   Vol Down = Do NOT install launcher"
+  if $FUNCTION; then
+    ui_print " "
+    ui_print "- Select Launcher -"
+    ui_print "   Choose which Pixel Launcher you want installed:"
+    ui_print "   Vol Up = Google Stock Launcher, Vol Down = Custom Launcher"
+    if $FUNCTION; then 
+      ui_print " "
+      ui_print "Installing Google stock launcher.."
+      LAUNCHER=gpl
+    else 
+      ui_print " "
+      ui_print "- Select Custom Launcher -"
+      ui_print "   Choose which Pixel Launcher you want installed:"
+      ui_print "   Vol Up = Shubbyy's Ruthless, Vol Down = more options"
+      if $FUNCTION; then
+        ui_print " "
+        ui_print "Installing Shubbyy's Ruthless Launcher.."
+        LAUNCHER=rpl
+      else
+        ui_print " "
+        ui_print "- Select More Custom Launcher -"
+        ui_print "   Choose which Pixel Launcher you want installed:"
+        ui_print "   Vol Up = paphonb's Modded, Vol Down = New Pixel 2 Launcher Mod"
+        if $FUNCTION; then
+          ui_print " "
+          ui_print "Installing Shubbyy's Ruthless Launcher.."
+          LAUNCHER=rpl
+	else
+          ui_print " "
+          ui_print "Installing New Pixel 2 Launcher Mod.."
+          LAUNCHER=npl
+	fi
+      fi     
+    fi
+  else
+    ui_print "Not installing launcher.."
+    LAUNCHER=none
+    # this is stupid way to fix this script
+    # using if [ -z $var ] on last cp_ch just breaks this script..?
+    # now it just tries to copy nothing..
   fi
+
 else
   ui_print "   Pixel Launcher specified in zipname!"
 fi
