@@ -20,9 +20,9 @@ Searching around the internet, I've seen several mods on XDA, GitHub and other w
 To avoid Launcher being renamed/crashing, allow Phone and Storage permissions via Settings app.
 
 ## Latest changelog
-v3.1
-- fix Camera lag for Xiaomi Mi A1
-- update Ruthless Pixel Launcher
+v3.3
+- add support for 4 launchers
+- allow users not to add a launcher via the module
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
 
@@ -70,6 +70,7 @@ Provide feedback via the XDA thread by inputting your phone model, current ROM. 
 
 ## Thanks
 Thanks to these people!
+- @tohtorin for helping out with the Unity script | [XDA profile](https://forum.xda-developers.com/member.php?u=7547198)
 - @Zackptg5 for helping out with the Unity Installer | [XDA guide](https://forum.xda-developers.com/android/software/guide-volume-key-selection-flashable-zip-t3773410)
 - @Rom for helping out the install.sh codes | [XDA profile](https://forum.xda-developers.com/member.php?u=5332893)
 - @shubbyy for his Ruthless Pixel Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903/)
