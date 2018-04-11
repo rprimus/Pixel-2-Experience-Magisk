@@ -52,7 +52,6 @@ chooseportold() {
 
 ui_print " "
 if [ -z $LAUNCHER ]; then
-
   if keytest; then
     FUNCTION=chooseport
   else
@@ -65,7 +64,6 @@ if [ -z $LAUNCHER ]; then
     ui_print "   Press Vol Down"
     $FUNCTION "DOWN"
   fi
-
   ui_print " "
   ui_print "- Do you want to install a Launcher?"
   ui_print "   Vol+ = Install Launcher"
@@ -97,23 +95,21 @@ if [ -z $LAUNCHER ]; then
           ui_print " "
           ui_print "Installing Amir's Launcher3..."
           LAUNCHER=apl
-	else
+        else
           ui_print " "
           ui_print "Installing New Pixel 2 Launcher Mod..."
           LAUNCHER=npl
-	fi
+        fi
       fi     
     fi
   else
     ui_print "Skip installing launchers..."
-    LAUNCHER=none
-    # this is stupid way to fix this script
-    # using if [ -z $var ] on last cp_ch just breaks this script..?
-    # now it just tries to copy nothing..
   fi
-
 else
   ui_print "   Pixel Launcher specified in zipname!"
 fi
 
-cp_ch $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
+if [ -z $LAUNCHER ]; then
+  mkdir -p $INSTALLER/system/priv-app/Pixel2Launcher
+  cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
+fi
