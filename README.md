@@ -22,6 +22,9 @@ As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when
 To avoid Launcher being renamed/crashing, allow Phone and Storage permissions via Settings app.
 
 ## Latest changelog
+v3.6
+- Add Launcher backup/restore functions
+
 v3.5
 - Completely re-upload files/codes to ensure it's properly working
 
