@@ -113,3 +113,41 @@ if [ ! -z $LAUNCHER ]; then
   mkdir -p $INSTALLER/system/priv-app/Pixel2Launcher
   cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
 fi
+
+# backup
+if [ -f /data/data/com.google.android.apps.nexuslauncher/databases/launcher.db ]; then
+  ui_print " "
+  ui_print " - Select Backup -"
+  ui_print "   Found previous home screens, do you want to backup?"
+  ui_print "   Vol+ = Create backup, Vol- = Do NOT create backup"
+  if $FUNCTION; then
+    ui_print " "
+    ui_print "   Backing up home screens.."
+    cp -f /data/data/com.google.android.apps.nexuslauncher/databases/launcher.db /data/media/0/.launcher.db.backup
+    NORESTORE=1
+  else
+    ui_print " "
+    ui_print "   Did not backup!"
+  fi
+fi
+
+# restore
+if [ -f /data/media/0/.launcher.db.backup ] && [ -z $NORESTORE ]; then
+  ui_print " "
+  ui_print " - Select Restore -"
+  ui_print "   Found backup of home screens, do you want to restore?"
+  ui_print "   Vol+ = Restore backup, Vol- = Do NOT restore"
+  if $FUNCTION; then
+    ui_print " "
+    ui_print "   Restoring home screens.."
+    if [ ! -f /data/data/com.google.android.apps.nexuslauncher/databases/launcher.db ]; then
+      mkdir -p /data/data/com.google.android.apps.nexuslauncher/databases
+      set_perm_recursive /data/data/com.google.android.apps.nexuslauncher 0 0 0755 0644
+    fi
+    cp -f /data/media/0/.launcher.db.backup /data/data/com.google.android.apps.nexuslauncher/databases/launcher.db
+  else
+    ui_print " "
+    ui_print "   Did not restore!"
+  fi
+fi
+
