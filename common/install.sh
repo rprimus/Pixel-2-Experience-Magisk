@@ -141,10 +141,10 @@ if [ -f /data/media/0/.launcher.db.backup ] && [ -z $NORESTORE ]; then
     ui_print " "
     ui_print "   Restoring home screens.."
     if [ ! -d /data/data/com.google.android.apps.nexuslauncher/databases ]; then
-      mkdir -p /data/data/com.google.android.apps.nexuslauncher/databases
-      set_perm_recursive /data/data/com.google.android.apps.nexuslauncher 0 0 0755 0644
+      touch /data/media/0/.launcher.restore
+    else
+      cp -f /data/media/0/.launcher.db.backup /data/data/com.google.android.apps.nexuslauncher/databases/launcher.db
     fi
-    cp -f /data/media/0/.launcher.db.backup /data/data/com.google.android.apps.nexuslauncher/databases/launcher.db
   else
     ui_print " "
     ui_print "   Did not restore!"
