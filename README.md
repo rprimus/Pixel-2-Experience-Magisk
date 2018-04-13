@@ -25,19 +25,11 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v3.7
+- Make use of late start service
+
 v3.6
 - Add Launcher backup/restore functions
-
-v3.5
-- Completely re-upload files/codes to ensure it's properly working
-
-v3.4.1
-- Update Amir's Launcher (Completely rewrite Google Now Feed code based on decompiled P Launcher) | https://t.me/appforks/791
-
-v3.4
-- bug fixes; eol conversion by @Zackptg5
-- add support for 4 launchers
-- allow users not to add a launcher via the module
 
 ## Latest Launcher versions
 - Customized Pixel Launcher = 1.7.4 | [Telegram channel](https://t.me/CPL_update_channel)
