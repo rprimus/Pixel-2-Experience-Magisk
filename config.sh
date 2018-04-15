@@ -31,10 +31,10 @@ AUTOMOUNT=true
 PROPFILE=true
 
 # Set to true if you need post-fs-data script
-POSTFSDATA=false
+POSTFSDATA=true
 
 # Set to true if you need late_start service script
-LATESTARTSERVICE=false
+LATESTARTSERVICE=true
 
 # Unity Variables
 # Uncomment and change 'MINAPI' and 'MAXAPI' to the minimum and maxium android version for your mod (note that magisk has it's own minimum api: 21 (lollipop))
@@ -59,7 +59,7 @@ print_modname() {
   ui_print "    *******************************************"
   ui_print "    *            Pixel 2 Experience           *"
   ui_print "    *******************************************"
-  ui_print "    *                  v3.0                   *"
+  ui_print "    *                  v3.7                   *"
   ui_print "    *                Joey Huab                *"
   ui_print "    *******************************************"
   ui_print " "
@@ -85,9 +85,9 @@ REPLACE="
 # Construct your own list here, it will overwrite the example
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
-/system-priv-app/Launcher3
+/system/priv-app/Launcher3
 /system/priv-app/NexusLauncherPrebuilt
-/system-priv-app/Trebuchet
+/system/priv-app/Trebuchet
 "
 
 ##########################################################################################

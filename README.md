@@ -1,12 +1,14 @@
-## Pixel 2 Experience
+# Pixel 2 Experience
 I made a compilation of the different mods and came up with this Pixel 2 Experience module which can be flashed with other devices on Nougat.
 
 ## Information
-Searching around the internet, I've seen several mods on XDA, GitHub and other websites which have extracted files from the Pixel 2 devices. I've decided to gather them and compiled them all into a single Magisk Module. This module can be flashed with other devices on Oreo as well.
+As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when I first bought my device. Kernel sources weren't released at the time so I decided if I can cook up a Magisk module that can bring me the Pixel Experience ROM without the need to install that certain ROM. What I did is to search around the internet which lead me to several mods on XDA, GitHub and other websites which have extracted files from the Pixel 2 devices. I've decided to gather them and compiled them all into a single Magisk Module. This module can be flashed with other devices on Nougat and above as well.
 
 ## Features
-- Modded Pixel 2 Launcher by @paphonb | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393) | [Telegram channel for Launcher support](https://t.me/MPixelLauncher2)
-- Ruthless Pixel Launcher by @shubbyy (with icon pack support among other lovely features) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903/) | [Telegram channel for Launcher support](https://t.me/RPLauncher)
+- Customized Pixel 2 Launcher by [@whataudoinghere](https://forum.xda-developers.com/member.php?u=8880821) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559) | [Telegram channel for Launcher support](https://t.me/CPL_discussion_group)
+- Modded Pixel 2 Launcher by [@paphonb](https://forum.xda-developers.com/member.php?u=6018897) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393) | [Telegram channel for Launcher support](https://t.me/MPixelLauncher2)
+- Rootless Pixel Launcher by [@azaidi](https://forum.xda-developers.com/member.php?u=3012129) | [XDA thread](https://forum.xda-developers.com/android/apps-games/launcher3-pixel-launcher-features-t3620972) | [Telegram channel for Launcher support](https://t.me/launcherthree)
+- Ruthless (Pixel 2) Launcher by [@shubbyy](https://forum.xda-developers.com/member.php?u=6086799) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903) | [Telegram channel for Launcher support](https://t.me/RPLauncher)
 - Pixel accent (in system/vendor/overlay/Pixel)
 - Google Lens enabled in Google Photos
 - Google Sans font used in Google Assistant, Pixel Launcher, System Update window, SetupWizard text, lockscreen clock
@@ -16,13 +18,32 @@ Searching around the internet, I've seen several mods on XDA, GitHub and other w
 - EIS support
 - Enables Night Light support
 
+## Reminders
+To avoid Launcher being renamed/crashing, allow Phone and Storage permissions via Settings app.
+
+## Support
+You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
+
 ## Latest changelog
-v3.0
-- use Unity Installer functionality to allow users to choose between launchers
+v3.7
+- Make use of late start service
+
+v3.6
+- Add Launcher backup/restore functions
+
+## Latest Launcher versions
+- Customized Pixel Launcher = 1.7.4 | [Telegram channel](https://t.me/CPL_update_channel)
+- Modded Pixel 2 Launcher = 5.3.0 | Latest version in [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393)
+- Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks)
+- Ruthless Pixel Launcher = me_irl | [Telegram channel](https://t.me/ruthlaunch)
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
 
+## PROPER STEPS TO UNINSTALL MODULE
+In order to avoid bootloops after removing the module, you will need to remove all overlays. Go to Magisk Manager and uninstall the module then reboot to TWRP. Flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk) to remove all remaining overlays. You should be able to reboot without any problems afterwards!
+
 ## Compatibility
+- Asus Zenfone 2 Selfie, running RR 5.8.5 (Android 7.1.2)
 - Cherry Mobile G1 on 8.1.0 LOS 15.1 (seed)
 - HTC U11
 - Huawei P10 with EMUI 8.0 (8.0.0.365) (c432) 
@@ -38,6 +59,7 @@ For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/a
 - Nexus 5
 - Nexus 5x on 8.1.0
 - Samsung Galaxy A5 (2017) LOS 15.1
+- Samsung Galaxy Note 3 n9005 on 8.1 RR
 - Samsung Galaxy S6
 - Samsung Galaxy S8 Exynos - weather app crashes but no other issues found
 - Sony Xperia Z2 on 8.1.0 Resurrection Remix Oreo
@@ -52,6 +74,8 @@ For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/a
 - Xiaomi Mi Max 2 running LOS 14.1
 - Xiaomi Mi Mix 2
 - Xiaomi Mi Note 2 with MIUI 9
+- YU Yureka Black on AOSP Extended 7.1.2
+- YU Yureka Black on Resurrection Remix 7.1.2
 - Zuk Z2 Pro on Aex 5.2 Oreo
 - Zuk Z2 Pro in Resurrection Remix v.6.0.0 and Aex 5.3
 
@@ -59,9 +83,12 @@ Provide feedback via the XDA thread by inputting your phone model, current ROM. 
 
 ## Thanks
 Thanks to these people!
+- @tohtorin for helping out with the Unity script | [XDA profile](https://forum.xda-developers.com/member.php?u=7547198)
 - @Zackptg5 for helping out with the Unity Installer | [XDA guide](https://forum.xda-developers.com/android/software/guide-volume-key-selection-flashable-zip-t3773410)
 - @Rom for helping out the install.sh codes | [XDA profile](https://forum.xda-developers.com/member.php?u=5332893)
 - @shubbyy for his Ruthless Pixel Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903/)
+- @azaidi for his Rootless Pixel Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/launcher3-pixel-launcher-features-t3620972)
+- @whataudoinghere for his Customized Pixel 2 Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559)
 - @paphonb for his Modded Pixel 2 Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393)
 - @Chronzy for providing the system/vendor/overlay files as well as system/media files from his Pixel 2. | [XDA thread](https://forum.xda-developers.com/showpost.php?p=74267243&postcount=14) 
 - @elmkzgirxp for providing an overlay for the lockscreen font

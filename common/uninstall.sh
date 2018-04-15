@@ -1,9 +1,12 @@
-[ $API -ge 26 ] && { rm -rf /data/data/james.dsp; rm -rf /data/app/james.dsp*; rm -f $SDCARD/JamesDSPManager.apk; }
-
-$MAGISK || { for FILE in ${CFGS}; do
-               case $FILE in
-                 *.conf) sed -i "/jamesdsp { #$MODID/,/} #$MODID/d" $UNITY$FILE
-                         sed -i "/jdsp { #$MODID/,/} #$MODID/d" $UNITY$FILE;;
-                 *.xml) sed -i "/<!--$MODID-->/d" $UNITY$FILE;;
-               esac
-             done }
+if [ -f /data/data/com.google.android.apps.nexuslauncher/databases/launcher.db ]; then
+  ui_print " "
+  ui_print "   Backing up home screens before uninstall.."
+  if [ -f /data/media/0/.launcher.db.backup ]; then
+    ui_print "   Fround previous backup, backing it up.."
+    cp -f /data/media/0/.launcher.db.backup /data/media/0/.launcher.db.backup.2
+    cp -f /data/data/com.google.android.apps.nexuslauncher/databases/launcher.db /data/media/0/.launcher.db.backup
+  else
+    ui_print "   No previous backup found.."
+    cp -f /data/data/com.google.android.apps.nexuslauncher/databases/launcher.db /data/media/0/.launcher.db.backup
+  fi
+fi
