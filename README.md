@@ -27,6 +27,7 @@ You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experi
 ## Latest changelog
 v3.8
 - Execute launcher backup feature before uninstalling module
+- Update Amir's Launcher | https://t.me/appforks/805
 
 v3.7
 - Make use of late start service
