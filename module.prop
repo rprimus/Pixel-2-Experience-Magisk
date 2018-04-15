@@ -1,7 +1,7 @@
 id=pixel2exp
 name=Pixel 2 Experience
-version=v3.7
-versionCode=22
+version=v3.8
+versionCode=23
 author=Joey Huab, tohtorin, Zackptg5
 description=Ports Pixel 2 exclusive features; includes 4 different Pixel Launchers (ability to choose between launchers or skip choosing), Pixel theme accent, Pixel audio files; enables Google Sans font in Settings app, Google Assistant, Google Lens on Photos app, Camera2 API and EIS support (varies per device)
 support=https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/
