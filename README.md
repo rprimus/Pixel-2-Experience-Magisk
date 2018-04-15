@@ -25,6 +25,9 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v3.8
+- Execute launcher backup feature before uninstalling module
+
 v3.7
 - Make use of late start service
 
