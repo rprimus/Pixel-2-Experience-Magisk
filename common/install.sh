@@ -1,8 +1,8 @@
-# GET RPL/MPL/NPL/GPL FROM ZIP NAME
+# GET APL/CPL/MPL/RPL FROM ZIP NAME
 case $(basename $ZIP) in
   *apl*|*Apl*|*APL*) LAUNCHER=apl;;
+  *cpl*|*Cpl*|*CPL*) LAUNCHER=cpl;;
   *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
-  *npl*|*Npl*|*NPL*) LAUNCHER=npl;;
   *rpl*|*Rpl*|*RPL*) LAUNCHER=rpl;;
 esac
 
@@ -72,16 +72,16 @@ if [ -z $LAUNCHER ]; then
     ui_print " "
     ui_print " - Select Launcher -"
     ui_print "   Choose which Pixel Launcher you want installed:"
-    ui_print "   Vol+ = Stock, Vol- = Custom Launchers"
+    ui_print "   Vol+ = Stock, Vol- = Custom Launcher choices"
     if $FUNCTION; then 
       ui_print " "
-      ui_print "   Installing paphonb's Modded Stock Pixel 2 Launcher..."
+      ui_print "   Installing paphonb's Modded Pixel 2 Launcher..."
       LAUNCHER=mpl
     else 
       ui_print " "
       ui_print " - Select Custom Launcher -"
       ui_print "   Choose which custom Pixel Launcher you want installed:"
-      ui_print "   Vol+ = Shubbyy's Ruthless, Vol- = More options"
+      ui_print "   Vol+ = Shubbyy's Ruthless Pixel Launcher, Vol- = More options"
       if $FUNCTION; then
         ui_print " "
         ui_print "   Installing Shubbyy's Ruthless Pixel Launcher..."
@@ -90,15 +90,15 @@ if [ -z $LAUNCHER ]; then
         ui_print " "
         ui_print " - Select Custom Launcher -"
         ui_print "   Choose which custom Pixel Launcher you want installed:"
-        ui_print "   Vol+ = Amir's Launcher3, Vol- = New Pixel 2 Launcher Mod"
+        ui_print "   Vol+ = Amir's Rootless Pixel 2 Launcher, Vol- = Customized Pixel Launcher"
         if $FUNCTION; then
           ui_print " "
-          ui_print "   Installing Amir's Launcher3..."
+          ui_print "   Installing Amir's Rootless Pixel 2 Launcher..."
           LAUNCHER=apl
         else
           ui_print " "
-          ui_print "   Installing New Pixel 2 Launcher Mod..."
-          LAUNCHER=npl
+          ui_print "   Installing Customized Pixel Launcher..."
+          LAUNCHER=cpl
         fi
       fi     
     fi
