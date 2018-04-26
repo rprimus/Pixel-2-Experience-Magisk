@@ -25,6 +25,14 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v4.0
+- Removed the google unlimited storage dialog (try clearing the cache of your Google Photos app)
+- Moved NightLight and PixelThemeOverlay from their respective folders to the root of system/vendor/overlay
+- Add Circle icons mask for full Pixel Launcher effect
+- Re-add Google Sans font for Lockscreen clock
+- Update Modded Pixel Launcher to version 5.3 build 17 | [Telegram](https://t.me/getMpl/14)
+- Update GoogleSans-Regular.ttf (should fix colons in Google Sans lockscreen clock font)
+
 v3.9
 - Changed NPL folder into CPL to reflect Customized Pixel Launcher name
 - Updated CPL to latest version (v1.7.5) | [Changelog](https://t.me/CPL_update_channel/31) | [APK](https://t.me/CPL_update_channel/32)
@@ -34,9 +42,6 @@ v3.9
 v3.8
 - Execute launcher backup feature before uninstalling module
 - Update Amir's Launcher | https://t.me/appforks/805
-
-v3.7
-- Make use of late start service
 
 ## Latest Launcher versions
 - Customized Pixel Launcher = 1.7.4 | [Telegram channel](https://t.me/CPL_update_channel)
