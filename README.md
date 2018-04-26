@@ -44,12 +44,19 @@ v3.8
 - Update Amir's Launcher | https://t.me/appforks/805
 
 ## Latest Launcher versions
-- Customized Pixel Launcher = 1.7.4 | [Telegram channel](https://t.me/CPL_update_channel)
-- Modded Pixel 2 Launcher = 5.3.0 | Latest version in [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393)
+- Customized Pixel Launcher = 1.7.4
+- Modded Pixel 2 Launcher = 5.3.0 build 17 | [Telegram channel](https://t.me/getMpl)
 - Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks)
-- Ruthless Pixel Launcher = me_irl | [Telegram channel](https://t.me/ruthlaunch)
+- Ruthless Pixel Launcher = Ass-gaurd (thor's home) | [Telegram channel](https://t.me/ruthlaunch)
 
-For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
+For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/showpost.php?p=75731833&postcount=2)
+
+## STEPS TO ENABLE NIGHT LIGHT
+You need to type this code via adb (connect your device to the PC with USB Debugging enabled)
+
+adb shell cmd overlay enable --user 0 android.res.night
+
+then reboot your device.
 
 ## PROPER STEPS TO UNINSTALL MODULE
 In order to avoid bootloops after removing the module, you will need to remove all overlays. Go to Magisk Manager and uninstall the module then reboot to TWRP. Flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk) to remove all remaining overlays. You should be able to reboot without any problems afterwards!
