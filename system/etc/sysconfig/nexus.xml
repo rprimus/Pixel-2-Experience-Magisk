@@ -6,8 +6,6 @@
     <feature name="com.google.android.feature.PIXEL_EXPERIENCE" />
 
     <!-- Both versions of this string are needed due to a miscommunication. b/29978934 -->
-    <feature name="com.google.android.apps.photos.NEXUS_PRELOAD" />
-    <feature name="com.google.android.apps.photos.nexus_preload" />
 
     <!-- Enable Zero Touch Provisioning support for 2016 and newer Nexus devices. -->
     <feature name="com.google.android.feature.ZERO_TOUCH" />
