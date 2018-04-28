@@ -25,6 +25,9 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v4.1
+- Revert some changes from v4.0 to fix bugs
+
 v4.0
 - Removed the google unlimited storage dialog (try clearing the cache of your Google Photos app)
 - Moved NightLight and PixelThemeOverlay from their respective folders to the root of system/vendor/overlay
