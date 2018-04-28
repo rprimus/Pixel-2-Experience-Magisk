@@ -14,7 +14,7 @@ keytest() {
   ui_print "   Press Vol Up:"
   (/system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $INSTALLER/events) || return 1
   return 0
-}   
+}
 
 chooseport() {
   #note from chainfire @xda-developers: getevent behaves weird when piped, and busybox grep likes that even less than toolbox/toybox grep
@@ -73,11 +73,11 @@ if [ -z $LAUNCHER ]; then
     ui_print " - Select Launcher -"
     ui_print "   Choose which Pixel Launcher you want installed:"
     ui_print "   Vol+ = Stock, Vol- = Custom Launcher choices"
-    if $FUNCTION; then 
+    if $FUNCTION; then
       ui_print " "
       ui_print "   Installing paphonb's Modded Pixel 2 Launcher..."
       LAUNCHER=mpl
-    else 
+    else
       ui_print " "
       ui_print " - Select Custom Launcher -"
       ui_print "   Choose which custom Pixel Launcher you want installed:"
@@ -100,7 +100,7 @@ if [ -z $LAUNCHER ]; then
           ui_print "   Installing Customized Pixel Launcher..."
           LAUNCHER=cpl
         fi
-      fi     
+      fi
     fi
   else
     ui_print "   Skip installing launchers..."
@@ -110,6 +110,10 @@ else
 fi
 
 if [ ! -z $LAUNCHER ]; then
+  # remove /data/resource-cache
+  ui_print "   Removing /data/resource-cache!"
+  rm -rf /data/resource-cache
+
   mkdir -p $INSTALLER/system/priv-app/Pixel2Launcher
   cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
 fi
