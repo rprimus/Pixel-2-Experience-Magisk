@@ -12,7 +12,9 @@ chmod 755 $INSTALLER/common/keycheck
 # remove /data/resource-cache/overlays.list
 OVERLAY='/data/resource-cache/overlays.list'
 ui_print "   Removing $OVERLAY"
-rm -f "$OVERLAY"
+if [ -f "$OVERLAY" ] ;then
+  rm -f "$OVERLAY"
+fi
 
 keytest() {
   ui_print " - Vol Key Test -"
