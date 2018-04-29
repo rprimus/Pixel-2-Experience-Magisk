@@ -25,6 +25,13 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v4.3
+- Allow users to keep stock Pixel Launcher if they chose to skip installing a different launcher
+- Use NexusLauncherPrebuilt directory for modded/custom Pixel Launcher
+
+v4.2
+- Add removal of data/resource-cache to avoid device not booting
+
 v4.1
 - Revert some changes from v4.0 to fix bugs
 
