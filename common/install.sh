@@ -11,8 +11,8 @@ chmod 755 $INSTALLER/common/keycheck
 
 # remove /data/resource-cache/overlays.list
 OVERLAY='/data/resource-cache/overlays.list'
-ui_print "   Removing $OVERLAY"
 if [ -f "$OVERLAY" ] ;then
+  ui_print "   Removing $OVERLAY"
   rm -f "$OVERLAY"
 fi
 
