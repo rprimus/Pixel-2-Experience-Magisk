@@ -9,6 +9,13 @@ esac
 # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
 chmod 755 $INSTALLER/common/keycheck
 
+# remove /data/resource-cache/overlays.list
+OVERLAY='/data/resource-cache/overlays.list'
+if [ -f "$OVERLAY" ] ;then
+  ui_print "   Removing $OVERLAY"
+  rm -f "$OVERLAY"
+fi
+
 keytest() {
   ui_print " - Vol Key Test -"
   ui_print "   Press Vol Up:"
@@ -110,10 +117,6 @@ else
 fi
 
 if [ ! -z $LAUNCHER ]; then
-  # remove /data/resource-cache
-  ui_print "   Removing /data/resource-cache!"
-  rm -rf /data/resource-cache
-
   mkdir -p $INSTALLER/system/priv-app/NexusLauncherPrebuilt
   cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk
 fi
