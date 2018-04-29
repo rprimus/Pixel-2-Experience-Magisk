@@ -114,8 +114,8 @@ if [ ! -z $LAUNCHER ]; then
   ui_print "   Removing /data/resource-cache!"
   rm -rf /data/resource-cache
 
-  mkdir -p $INSTALLER/system/priv-app/Pixel2Launcher
-  cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
+  mkdir -p $INSTALLER/system/priv-app/NexusLauncherPrebuilt
+  cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk
 fi
 
 # backup
