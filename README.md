@@ -25,6 +25,27 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v4.4
+- Remove overlay.list additions by R Primus
+
+v4.3
+- Allow users to keep stock Pixel Launcher if they chose to skip installing a different launcher
+- Use NexusLauncherPrebuilt directory for modded/custom Pixel Launcher
+
+v4.2
+- Add removal of data/resource-cache to avoid device not booting
+
+v4.1
+- Revert some changes from v4.0 to fix bugs
+
+v4.0
+- Removed the google unlimited storage dialog (try clearing the cache of your Google Photos app)
+- Moved NightLight and PixelThemeOverlay from their respective folders to the root of system/vendor/overlay
+- Add Circle icons mask for full Pixel Launcher effect
+- Re-add Google Sans font for Lockscreen clock
+- Update Modded Pixel Launcher to version 5.3 build 17 | [Telegram](https://t.me/getMpl/14)
+- Update GoogleSans-Regular.ttf (should fix colons in Google Sans lockscreen clock font)
+
 v3.9
 - Changed NPL folder into CPL to reflect Customized Pixel Launcher name
 - Updated CPL to latest version (v1.7.5) | [Changelog](https://t.me/CPL_update_channel/31) | [APK](https://t.me/CPL_update_channel/32)
@@ -35,16 +56,20 @@ v3.8
 - Execute launcher backup feature before uninstalling module
 - Update Amir's Launcher | https://t.me/appforks/805
 
-v3.7
-- Make use of late start service
-
 ## Latest Launcher versions
-- Customized Pixel Launcher = 1.7.4 | [Telegram channel](https://t.me/CPL_update_channel)
-- Modded Pixel 2 Launcher = 5.3.0 | Latest version in [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393)
+- Customized Pixel Launcher = 1.7.4
+- Modded Pixel 2 Launcher = 5.3.0 build 17 | [Telegram channel](https://t.me/getMpl)
 - Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks)
-- Ruthless Pixel Launcher = me_irl | [Telegram channel](https://t.me/ruthlaunch)
+- Ruthless Pixel Launcher = Ass-gaurd (thor's home) | [Telegram channel](https://t.me/ruthlaunch)
 
-For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
+For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/showpost.php?p=75731833&postcount=2)
+
+## STEPS TO ENABLE NIGHT LIGHT
+You need to type this code via adb (connect your device to the PC with USB Debugging enabled)
+
+adb shell cmd overlay enable --user 0 android.res.night
+
+then reboot your device.
 
 ## PROPER STEPS TO UNINSTALL MODULE
 In order to avoid bootloops after removing the module, you will need to remove all overlays. Go to Magisk Manager and uninstall the module then reboot to TWRP. Flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk) to remove all remaining overlays. You should be able to reboot without any problems afterwards!
@@ -90,6 +115,7 @@ Provide feedback via the XDA thread by inputting your phone model, current ROM. 
 
 ## Thanks
 Thanks to these people!
+- @rprimus for helping out with the overlay.list issues to avoid system not booting issue in previous builds
 - @tohtorin for helping out with the Unity script | [XDA profile](https://forum.xda-developers.com/member.php?u=7547198)
 - @Zackptg5 for helping out with the Unity Installer | [XDA guide](https://forum.xda-developers.com/android/software/guide-volume-key-selection-flashable-zip-t3773410)
 - @Rom for helping out the install.sh codes | [XDA profile](https://forum.xda-developers.com/member.php?u=5332893)
