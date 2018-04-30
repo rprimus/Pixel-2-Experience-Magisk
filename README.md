@@ -115,6 +115,7 @@ Provide feedback via the XDA thread by inputting your phone model, current ROM. 
 
 ## Thanks
 Thanks to these people!
+- @rprimus for helping out with the overlay.list issues to avoid system not booting issue in previous builds
 - @tohtorin for helping out with the Unity script | [XDA profile](https://forum.xda-developers.com/member.php?u=7547198)
 - @Zackptg5 for helping out with the Unity Installer | [XDA guide](https://forum.xda-developers.com/android/software/guide-volume-key-selection-flashable-zip-t3773410)
 - @Rom for helping out the install.sh codes | [XDA profile](https://forum.xda-developers.com/member.php?u=5332893)
