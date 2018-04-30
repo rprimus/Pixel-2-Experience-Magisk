@@ -62,7 +62,7 @@ adb shell cmd overlay enable --user 0 android.res.night
 then reboot your device.
 
 ## PROPER STEPS TO UNINSTALL MODULE
-In order to avoid bootloops after removing the module, you will need to remove all overlays. Go to Magisk Manager and uninstall the module then reboot to TWRP. Flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk) to remove all remaining overlays. You should be able to reboot without any problems afterwards!
+Flash the Module a second time to uninstall it. Only flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk) if you encounter bootloops. You should be able to reboot without any problems afterwards!
 
 ## Compatibility
 - Asus Zenfone 2 Selfie, running RR 5.8.5 (Android 7.1.2)
