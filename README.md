@@ -25,6 +25,9 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v4.4
+- Remove overlay.list additions by R Primus
+
 v4.3
 - Allow users to keep stock Pixel Launcher if they chose to skip installing a different launcher
 - Use NexusLauncherPrebuilt directory for modded/custom Pixel Launcher
