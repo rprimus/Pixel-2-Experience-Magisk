@@ -46,16 +46,6 @@ v4.0
 - Update Modded Pixel Launcher to version 5.3 build 17 | [Telegram](https://t.me/getMpl/14)
 - Update GoogleSans-Regular.ttf (should fix colons in Google Sans lockscreen clock font)
 
-v3.9
-- Changed NPL folder into CPL to reflect Customized Pixel Launcher name
-- Updated CPL to latest version (v1.7.5) | [Changelog](https://t.me/CPL_update_channel/31) | [APK](https://t.me/CPL_update_channel/32)
-- Updated Rootless Pixel Launcher | [Latest](https://t.me/appforks/806)
-- Updated Ruthless Pixe Launcher | [Latest](https://t.me/ruthlaunch/200)
-
-v3.8
-- Execute launcher backup feature before uninstalling module
-- Update Amir's Launcher | https://t.me/appforks/805
-
 ## Latest Launcher versions
 - Customized Pixel Launcher = 1.7.4
 - Modded Pixel 2 Launcher = 5.3.0 build 17 | [Telegram channel](https://t.me/getMpl)
