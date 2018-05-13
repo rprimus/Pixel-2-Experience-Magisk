@@ -25,26 +25,16 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v4.5
+- Update Ruthless Launcher to May 13 release
+- Update Modded Pixel Launcher to version 6 build 15
+
 v4.4
 - Remove overlay.list additions by R Primus
 
 v4.3
 - Allow users to keep stock Pixel Launcher if they chose to skip installing a different launcher
 - Use NexusLauncherPrebuilt directory for modded/custom Pixel Launcher
-
-v4.2
-- Add removal of data/resource-cache to avoid device not booting
-
-v4.1
-- Revert some changes from v4.0 to fix bugs
-
-v4.0
-- Removed the google unlimited storage dialog (try clearing the cache of your Google Photos app)
-- Moved NightLight and PixelThemeOverlay from their respective folders to the root of system/vendor/overlay
-- Add Circle icons mask for full Pixel Launcher effect
-- Re-add Google Sans font for Lockscreen clock
-- Update Modded Pixel Launcher to version 5.3 build 17 | [Telegram](https://t.me/getMpl/14)
-- Update GoogleSans-Regular.ttf (should fix colons in Google Sans lockscreen clock font)
 
 ## Latest Launcher versions
 - Customized Pixel Launcher = 1.7.4
