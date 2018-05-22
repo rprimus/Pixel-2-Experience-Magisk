@@ -25,6 +25,10 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v4.6
+- Rename launcher to Pixel2Launcher instead of using NexusLauncherPrebuilt
+- Delete NexusLauncherPrebuilt and Launcher3 directory
+
 v4.5
 - Update Ruthless Launcher to May 13 release
 - Update Modded Pixel Launcher to version 6 build 15
