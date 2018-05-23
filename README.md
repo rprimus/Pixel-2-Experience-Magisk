@@ -25,6 +25,9 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
+v4.7
+- Try to fix MPL again
+
 v4.6
 - Rename launcher to Pixel2Launcher instead of using NexusLauncherPrebuilt
 - Delete NexusLauncherPrebuilt and Launcher3 directory
