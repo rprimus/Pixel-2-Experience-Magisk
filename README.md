@@ -11,7 +11,7 @@ As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when
 - Ruthless (Pixel 2) Launcher by [@shubbyy](https://forum.xda-developers.com/member.php?u=6086799) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903) | [Telegram channel for Launcher support](https://t.me/RPLauncher)
 - Pixel accent (in system/vendor/overlay/Pixel)
 - Google Lens enabled in Google Photos
-- Google Sans font used in Google Assistant, Pixel Launcher, System Update window, SetupWizard text
+- Google Sans font used in Google Assistant, Pixel Launcher, System Update window, SetupWizard text, lockscreen clock
 - Pixel 2 audio (ringtones, notifications, ui, alarms)
 - Enable Google Assistant via build.prop
 - Camera2 API support (find a working Modded Google Camera app [here](https://www.celsoazevedo.com/files/android/google-camera/))
@@ -25,16 +25,8 @@ To avoid Launcher being renamed/crashing, allow Phone and Storage permissions vi
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
 
 ## Latest changelog
-v4.7
-- Try to fix MPL again
-
-v4.6
-- Rename launcher to Pixel2Launcher instead of using NexusLauncherPrebuilt
-- Delete NexusLauncherPrebuilt and Launcher3 directory
-
-v4.5
-- Update Ruthless Launcher to May 13 release
-- Update Modded Pixel Launcher to version 6 build 15
+v4.8
+- Revert all changes from v4.5-v4.7
 
 v4.4
 - Remove overlay.list additions by R Primus
@@ -42,6 +34,20 @@ v4.4
 v4.3
 - Allow users to keep stock Pixel Launcher if they chose to skip installing a different launcher
 - Use NexusLauncherPrebuilt directory for modded/custom Pixel Launcher
+
+v4.2
+- Add removal of data/resource-cache to avoid device not booting
+
+v4.1
+- Revert some changes from v4.0 to fix bugs
+
+v4.0
+- Removed the google unlimited storage dialog (try clearing the cache of your Google Photos app)
+- Moved NightLight and PixelThemeOverlay from their respective folders to the root of system/vendor/overlay
+- Add Circle icons mask for full Pixel Launcher effect
+- Re-add Google Sans font for Lockscreen clock
+- Update Modded Pixel Launcher to version 5.3 build 17 | [Telegram](https://t.me/getMpl/14)
+- Update GoogleSans-Regular.ttf (should fix colons in Google Sans lockscreen clock font)
 
 ## Latest Launcher versions
 - Customized Pixel Launcher = 1.7.4
