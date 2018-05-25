@@ -26,7 +26,7 @@ You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experi
 
 ## Latest changelog
 v4.5
-- Update app name to anticipate Pixel 3 release
+- Update module name to anticipate Pixel 3 release
 
 v4.4
 - Remove overlay.list additions by R Primus
