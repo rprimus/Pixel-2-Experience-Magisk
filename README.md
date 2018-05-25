@@ -27,8 +27,8 @@ You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experi
 ## Latest changelog
 v4.5
 - Update module name to anticipate Pixel 3 release
-- Update Modded Pixel Launcher to v6 build 17 | https://t.me/getMpl/100
-- Update Ruthless Launcher to May 13 accent-based | https://t.me/ruthlaunch/292
+- Update Modded Pixel Launcher to v6 build 17 | [Telegram link](https://t.me/getMpl/100)
+- Update Ruthless Launcher to May 13 accent-based | [Telegram link](https://t.me/ruthlaunch/292)
 
 v4.4
 - Remove overlay.list additions by R Primus
@@ -63,8 +63,8 @@ v3.8
 
 ## Latest Launcher versions
 - Customized Pixel Launcher = 1.7.4
-- Modded Pixel 2 Launcher = 5.3.0 build 17 | [Telegram channel](https://t.me/getMpl)
-- Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks)
+- Modded Pixel 2 Launcher = 5.3.0 build 17 | [Telegram channel](https://t.me/getMpl))
+- Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks))
 - Ruthless Pixel Launcher = Ass-gaurd (thor's home) | [Telegram channel](https://t.me/ruthlaunch)
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/showpost.php?p=75731833&postcount=2)
