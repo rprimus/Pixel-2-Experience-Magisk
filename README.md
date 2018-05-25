@@ -16,7 +16,7 @@ As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when
 - Enable Google Assistant via build.prop
 - Camera2 API support (find a working Modded Google Camera app [here](https://www.celsoazevedo.com/files/android/google-camera/))
 - EIS support
-- Enables Night Light support
+- Enables Night Light support (device/ROM dependent)
 
 ## Reminders
 To avoid Launcher being renamed/crashing, allow Phone and Storage permissions via Settings app.
@@ -29,6 +29,7 @@ v4.5
 - Update module name to anticipate Pixel 3 release
 - Update Modded Pixel Launcher to v6 build 17 | [Telegram link](https://t.me/getMpl/100)
 - Update Ruthless Launcher to May 13 accent-based | [Telegram link](https://t.me/ruthlaunch/292)
+- Update Amir's version to the one posted by Shubbyy | [Telegram link](https://t.me/ruthlaunch/306)
 
 v4.4
 - Remove overlay.list additions by R Primus
