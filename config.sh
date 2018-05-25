@@ -56,11 +56,11 @@ unity_custom() {
 
 print_modname() {
   ui_print " "
-  ui_print "    *******************************************"
-  ui_print "    *            Pixel 2 Experience           *"
-  ui_print "    *******************************************"
-  ui_print "    *                  v4.4                   *"
-  ui_print "    *                Joey Huab                *"
+  ui_print "    *****************************************"
+  ui_print "    *            Pixel Experience           *"
+  ui_print "    *****************************************"
+  ui_print "    *                  v4.5                 *"
+  ui_print "    *                Joey Huab              *"
   ui_print "    *******************************************"
   ui_print " "
 }
