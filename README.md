@@ -19,7 +19,7 @@ As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when
 - Enables Night Light support (device/ROM dependent)
 
 ## Reminders
-To avoid Launcher being renamed/crashing, allow Phone and Storage permissions via Settings app.
+To avoid Launcher being renamed/crashing, disable the launcher you installed and switch to different launcher before disabling/uninstalling the module. Not doing so could result in a “0.0dip has stopped working" bug. If you do encounter this bug, try installing the real Pixel Launcher from the [Google Play store](https://play.google.com/store/apps/details?id=com.google.android.apps.nexuslauncher).
 
 ## Support
 You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
