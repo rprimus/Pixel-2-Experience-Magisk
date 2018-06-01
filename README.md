@@ -21,46 +21,21 @@ As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when
 ## Reminders
 To avoid Launcher being renamed/crashing, disable the launcher you installed and switch to different launcher before disabling/uninstalling the module. Not doing so could result in a “0.0dip has stopped working" bug. If you do encounter this bug, try installing the real Pixel Launcher from the [Google Play store](https://play.google.com/store/apps/details?id=com.google.android.apps.nexuslauncher).
 
+In order to avoid bootloops when removing the module, you need to flash the Rescue zip found [here](https://androidfilehost.com/?fid=673368273298925325) to disable all overlays. You should be able to reboot without any problems afterwards!
+
 ## Support
-You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
+You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
+v4.6
+- Update Amir's Launcher
+- Update config to remove other instances of Launcher3
+
 v4.5
 - Update module name to anticipate Pixel 3 release
 - Update Modded Pixel Launcher to v6 build 17 | [Telegram link](https://t.me/getMpl/100)
 - Update Ruthless Launcher to May 13 accent-based | [Telegram link](https://t.me/ruthlaunch/292)
 - Update Amir's version to the one posted by Shubbyy | [Telegram link](https://t.me/ruthlaunch/306)
-
-v4.4
-- Remove overlay.list additions by R Primus
-
-v4.3
-- Allow users to keep stock Pixel Launcher if they chose to skip installing a different launcher
-- Use NexusLauncherPrebuilt directory for modded/custom Pixel Launcher
-
-v4.2
-- Add removal of data/resource-cache to avoid device not booting
-
-v4.1
-- Revert some changes from v4.0 to fix bugs
-
-v4.0
-- Removed the google unlimited storage dialog (try clearing the cache of your Google Photos app)
-- Moved NightLight and PixelThemeOverlay from their respective folders to the root of system/vendor/overlay
-- Add Circle icons mask for full Pixel Launcher effect
-- Re-add Google Sans font for Lockscreen clock
-- Update Modded Pixel Launcher to version 5.3 build 17 | [Telegram](https://t.me/getMpl/14)
-- Update GoogleSans-Regular.ttf (should fix colons in Google Sans lockscreen clock font)
-
-v3.9
-- Changed NPL folder into CPL to reflect Customized Pixel Launcher name
-- Updated CPL to latest version (v1.7.5) | [Changelog](https://t.me/CPL_update_channel/31) | [APK](https://t.me/CPL_update_channel/32)
-- Updated Rootless Pixel Launcher | [Latest](https://t.me/appforks/806)
-- Updated Ruthless Pixe Launcher | [Latest](https://t.me/ruthlaunch/200)
-
-v3.8
-- Execute launcher backup feature before uninstalling module
-- Update Amir's Launcher | https://t.me/appforks/805
 
 ## Latest Launcher versions
 - Customized Pixel Launcher = 1.7.4
@@ -76,9 +51,6 @@ You need to type this code via adb (connect your device to the PC with USB Debug
 adb shell cmd overlay enable --user 0 android.res.night
 
 then reboot your device.
-
-## PROPER STEPS TO UNINSTALL MODULE
-In order to avoid bootloops after removing the module, you will need to remove all overlays. Go to Magisk Manager and uninstall the module then reboot to TWRP. Flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk) to remove all remaining overlays. You should be able to reboot without any problems afterwards!
 
 ## Compatibility
 - Asus Zenfone 2 Selfie, running RR 5.8.5 (Android 7.1.2)
