@@ -27,6 +27,10 @@ In order to avoid bootloops when removing the module, you need to flash the Resc
 You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
+v4.7
+- Update Ruthless Launcher to 2.0 [Telegram](https://t.me/ruthlaunch/314)
+- Update Amir's Launcher again [Telegram](https://t.me/appforks/820)
+
 v4.6
 - Update Amir's Launcher
 - Update config to remove other instances of Launcher3
