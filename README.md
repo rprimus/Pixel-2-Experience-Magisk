@@ -43,8 +43,8 @@ v4.5
 - Update Modded Pixel Launcher to v6 build 17 | [Telegram link](https://t.me/getMpl/100)
 
 ## Latest Launcher versions
-- Modded Pixel 2 Launcher = 6 build 17 | [Telegram channel](https://t.me/getMpl))
-- Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks))
+- Modded Pixel 2 Launcher = 6 build 17 | [Telegram channel](https://t.me/getMpl)
+- Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks)
 - Ruthless Pixel Launcher = 2.0 | [Telegram channel](https://t.me/ruthlaunch)
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/showpost.php?p=75731833&postcount=2)
