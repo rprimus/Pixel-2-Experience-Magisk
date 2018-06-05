@@ -5,7 +5,6 @@ I made a compilation of the different mods and came up with this Pixel Experienc
 As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when I first bought my device. Kernel sources weren't released at the time so I decided if I can cook up a Magisk module that can bring me the Pixel Experience ROM without the need to install that certain ROM. What I did is to search around the internet which lead me to several mods on XDA, GitHub and other websites which have extracted files from the Pixel 2 devices. I've decided to gather them and compiled them all into a single Magisk Module. This module can be flashed with other devices on Nougat and above as well.
 
 ## Features
-- Customized Pixel 2 Launcher by [@whataudoinghere](https://forum.xda-developers.com/member.php?u=8880821) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559) | [Telegram channel for Launcher support](https://t.me/CPL_discussion_group)
 - Modded Pixel 2 Launcher by [@paphonb](https://forum.xda-developers.com/member.php?u=6018897) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393) | [Telegram channel for Launcher support](https://t.me/MPixelLauncher2)
 - Rootless Pixel Launcher by [@azaidi](https://forum.xda-developers.com/member.php?u=3012129) | [XDA thread](https://forum.xda-developers.com/android/apps-games/launcher3-pixel-launcher-features-t3620972) | [Telegram channel for Launcher support](https://t.me/launcherthree)
 - Ruthless (Pixel 2) Launcher by [@shubbyy](https://forum.xda-developers.com/member.php?u=6086799) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903) | [Telegram channel for Launcher support](https://t.me/RPLauncher)
@@ -21,12 +20,16 @@ As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when
 ## Reminders
 To avoid Launcher being renamed/crashing, disable the launcher you installed and switch to different launcher before disabling/uninstalling the module. Not doing so could result in a “0.0dip has stopped working" bug. If you do encounter this bug, try installing the real Pixel Launcher from the [Google Play store](https://play.google.com/store/apps/details?id=com.google.android.apps.nexuslauncher).
 
-In order to avoid bootloops when removing the module, you need to flash the Rescue zip found [here](https://androidfilehost.com/?fid=673368273298925325) to disable all overlays. You should be able to reboot without any problems afterwards!
+If you encounter bootloop when uninstalling the module, you need to flash the Rescue zip found [here](https://androidfilehost.com/?fid=673368273298925325) to disable all overlays. You should be able to reboot without any problems afterwards!
 
 ## Support
 You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
+v4.8
+- Remove CPL from the module
+- Added Amir's Launcher optimized for Android Go [Telegram](https://t.me/appforks/821)
+
 v4.7
 - Update Ruthless Launcher to 2.0 [Telegram](https://t.me/ruthlaunch/314)
 - Update Amir's Launcher again [Telegram](https://t.me/appforks/820)
@@ -38,14 +41,11 @@ v4.6
 v4.5
 - Update module name to anticipate Pixel 3 release
 - Update Modded Pixel Launcher to v6 build 17 | [Telegram link](https://t.me/getMpl/100)
-- Update Ruthless Launcher to May 13 accent-based | [Telegram link](https://t.me/ruthlaunch/292)
-- Update Amir's version to the one posted by Shubbyy | [Telegram link](https://t.me/ruthlaunch/306)
 
 ## Latest Launcher versions
-- Customized Pixel Launcher = 1.7.4
-- Modded Pixel 2 Launcher = 5.3.0 build 17 | [Telegram channel](https://t.me/getMpl))
+- Modded Pixel 2 Launcher = 6 build 17 | [Telegram channel](https://t.me/getMpl))
 - Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks))
-- Ruthless Pixel Launcher = Ass-gaurd (thor's home) | [Telegram channel](https://t.me/ruthlaunch)
+- Ruthless Pixel Launcher = 2.0 | [Telegram channel](https://t.me/ruthlaunch)
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/showpost.php?p=75731833&postcount=2)
 
