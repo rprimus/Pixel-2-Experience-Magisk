@@ -1,7 +1,7 @@
-# GET APL/CPL/MPL/RPL FROM ZIP NAME
+# GET AGO/APL/MPL/RPL FROM ZIP NAME
 case $(basename $ZIP) in
+  *ago*|*Ago*|*AGO*) LAUNCHER=ago;;
   *apl*|*Apl*|*APL*) LAUNCHER=apl;;
-  *cpl*|*Cpl*|*CPL*) LAUNCHER=cpl;;
   *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
   *rpl*|*Rpl*|*RPL*) LAUNCHER=rpl;;
 esac
@@ -79,7 +79,7 @@ if [ -z $LAUNCHER ]; then
     ui_print " "
     ui_print " - Select Launcher -"
     ui_print "   Choose which Pixel Launcher you want installed:"
-    ui_print "   Vol+ = Stock, Vol- = Custom Launcher choices"
+    ui_print "   Vol+ = Modded Pixel 2 Launcher, Vol- = Other Launcher choices"
     if $FUNCTION; then
       ui_print " "
       ui_print "   Installing paphonb's Modded Pixel 2 Launcher..."
@@ -88,24 +88,24 @@ if [ -z $LAUNCHER ]; then
       ui_print " "
       ui_print " - Select Custom Launcher -"
       ui_print "   Choose which custom Pixel Launcher you want installed:"
-      ui_print "   Vol+ = Shubbyy's Ruthless Pixel Launcher, Vol- = More options"
+      ui_print "   Vol+ = Ruthless Pixel Launcher, Vol- = Rootless Pixel 2 Launcher"
       if $FUNCTION; then
         ui_print " "
         ui_print "   Installing Shubbyy's Ruthless Pixel Launcher..."
         LAUNCHER=rpl
       else
         ui_print " "
-        ui_print " - Select Custom Launcher -"
-        ui_print "   Choose which custom Pixel Launcher you want installed:"
-        ui_print "   Vol+ = Amir's Rootless Pixel 2 Launcher, Vol- = Customized Pixel Launcher"
+        ui_print " - Select Rootless Pixel 2 Launcher version -"
+        ui_print "   Choose which version of Amir's Launcher you want installed:"
+        ui_print "   Vol+ = Regular version, Vol- = Android Go version"
         if $FUNCTION; then
           ui_print " "
           ui_print "   Installing Amir's Rootless Pixel 2 Launcher..."
           LAUNCHER=apl
         else
           ui_print " "
-          ui_print "   Installing Customized Pixel Launcher..."
-          LAUNCHER=cpl
+          ui_print "   Installing Amir's Rootless Pixel 2 Launcher for Android Go..."
+          LAUNCHER=ago
         fi
       fi
     fi
