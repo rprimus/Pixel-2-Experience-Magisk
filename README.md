@@ -23,16 +23,16 @@ To avoid Launcher being renamed/crashing, disable the launcher you installed and
 If you encounter bootloop when uninstalling the module, you need to flash the Rescue zip found [here](https://androidfilehost.com/?fid=673368273298925325) to disable all overlays. You should be able to reboot without any problems afterwards!
 
 ## Support
-You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
+You may report any bugs via the new | [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
 v4.8
 - Remove CPL from the module
-- Added Amir's Launcher optimized for Android Go [Telegram](https://t.me/appforks/821)
+- Added Amir's Launcher optimized for Android Go | [Telegram](https://t.me/appforks/821)
 
 v4.7
-- Update Ruthless Launcher to 2.0 [Telegram](https://t.me/ruthlaunch/314)
-- Update Amir's Launcher again [Telegram](https://t.me/appforks/820)
+- Update Ruthless Launcher to 2.0 | [Telegram](https://t.me/ruthlaunch/314)
+- Update Amir's Launcher again | [Telegram](https://t.me/appforks/820)
 
 v4.6
 - Update Amir's Launcher
