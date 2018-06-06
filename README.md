@@ -29,6 +29,7 @@ You may report any bugs via the new | [Telegram channel](https://t.me/PXMagisk)
 v4.9
 - Remove Google Unlimited photo storage (doesn't work; goes against Google Drive storage)
 - Add a few more Pixel XML files
+- Include framework files
 
 v4.8
 - Remove CPL from the module
