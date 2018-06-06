@@ -1,7 +1,7 @@
 id=PXM
 name=Pixel Experience
-version=v4.8
-versionCode=33
+version=v4.9
+versionCode=34
 author=Joey Huab, R Primus, tohtorin, Zackptg5
 description=Ports Pixel exclusive features; includes 3 different Pixel Launchers mods (w/ one Android Go version, Pixel theme accent, Pixel audio files; enables Google Sans font in Assistant, System update window and Setup Wizard app, Google Lens on Photos app, Camera2 API and EIS support (varies per device)
 support=https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/
