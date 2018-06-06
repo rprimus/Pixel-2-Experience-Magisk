@@ -26,6 +26,10 @@ If you encounter bootloop when uninstalling the module, you need to flash the Re
 You may report any bugs via the new | [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
+v4.9
+- Remove Google Unlimited photo storage (doesn't work; goes against Google Drive storage)
+- Add a few more Pixel XML files
+
 v4.8
 - Remove CPL from the module
 - Added Amir's Launcher optimized for Android Go | [Telegram](https://t.me/appforks/821)
@@ -103,7 +107,6 @@ Thanks to these people!
 - @Rom for helping out the install.sh codes | [XDA profile](https://forum.xda-developers.com/member.php?u=5332893)
 - @shubbyy for his Ruthless Pixel Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903/)
 - @azaidi for his Rootless Pixel Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/launcher3-pixel-launcher-features-t3620972)
-- @whataudoinghere for his Customized Pixel 2 Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559)
 - @paphonb for his Modded Pixel 2 Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393)
 - @Chronzy for providing the system/vendor/overlay files as well as system/media files from his Pixel 2. | [XDA thread](https://forum.xda-developers.com/showpost.php?p=74267243&postcount=14) 
 - @elmkzgirxp for providing an overlay for the lockscreen font
