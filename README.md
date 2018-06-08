@@ -26,6 +26,11 @@ If you encounter bootloop when uninstalling the module, you need to flash the Re
 You may report any bugs via the new | [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
+v5.0
+- Audio improvements for Xiaomi Mi A1 (use fluencepro and fix talkback for Google Assistant)
+- Replace GoogleSans fonts from Android P Dev Preview 3
+- Replace NotoColorEmoji with latest Emoji pack from Android P Dev Preview 3
+
 v4.9
 - Remove Google Unlimited photo storage (doesn't work; goes against Google Drive storage)
 - Add a few more Pixel XML files
@@ -34,18 +39,6 @@ v4.9
 v4.8
 - Remove CPL from the module
 - Added Amir's Launcher optimized for Android Go | [Telegram](https://t.me/appforks/821)
-
-v4.7
-- Update Ruthless Launcher to 2.0 | [Telegram](https://t.me/ruthlaunch/314)
-- Update Amir's Launcher again | [Telegram](https://t.me/appforks/820)
-
-v4.6
-- Update Amir's Launcher
-- Update config to remove other instances of Launcher3
-
-v4.5
-- Update module name to anticipate Pixel 3 release
-- Update Modded Pixel Launcher to v6 build 17 | [Telegram link](https://t.me/getMpl/100)
 
 ## Latest Launcher versions
 - Modded Pixel 2 Launcher = 6 build 17 | [Telegram channel](https://t.me/getMpl)
