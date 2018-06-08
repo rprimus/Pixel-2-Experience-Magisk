@@ -9,3 +9,5 @@ ro.config.notification_sound=Popcorn.ogg
 ro.config.alarm_alert=Bright_morning.ogg
 ro.com.google.ime.theme_id=5
 ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
+ro.qc.sdk.audio.fluencetype=fluencepro
+mm.enable.qcom_parser=3183219

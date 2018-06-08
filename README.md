@@ -23,28 +23,26 @@ To avoid Launcher being renamed/crashing, disable the launcher you installed and
 If you encounter bootloop when uninstalling the module, you need to flash the Rescue zip found [here](https://androidfilehost.com/?fid=673368273298925325) to disable all overlays. You should be able to reboot without any problems afterwards!
 
 ## Support
-You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
+You may report any bugs via the new | [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
+v5.0
+- Audio improvements for Xiaomi Mi A1 (use fluencepro and fix talkback for Google Assistant)
+- Replace GoogleSans fonts from Android P Dev Preview 3
+- Replace NotoColorEmoji with latest Emoji pack from Android P Dev Preview 3
+
+v4.9
+- Remove Google Unlimited photo storage (doesn't work; goes against Google Drive storage)
+- Add a few more Pixel XML files
+- Include framework files
+
 v4.8
 - Remove CPL from the module
-- Added Amir's Launcher optimized for Android Go [Telegram](https://t.me/appforks/821)
-
-v4.7
-- Update Ruthless Launcher to 2.0 [Telegram](https://t.me/ruthlaunch/314)
-- Update Amir's Launcher again [Telegram](https://t.me/appforks/820)
-
-v4.6
-- Update Amir's Launcher
-- Update config to remove other instances of Launcher3
-
-v4.5
-- Update module name to anticipate Pixel 3 release
-- Update Modded Pixel Launcher to v6 build 17 | [Telegram link](https://t.me/getMpl/100)
+- Added Amir's Launcher optimized for Android Go | [Telegram](https://t.me/appforks/821)
 
 ## Latest Launcher versions
-- Modded Pixel 2 Launcher = 6 build 17 | [Telegram channel](https://t.me/getMpl))
-- Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks))
+- Modded Pixel 2 Launcher = 6 build 17 | [Telegram channel](https://t.me/getMpl)
+- Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks)
 - Ruthless Pixel Launcher = 2.0 | [Telegram channel](https://t.me/ruthlaunch)
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/showpost.php?p=75731833&postcount=2)
@@ -103,7 +101,6 @@ Thanks to these people!
 - @Rom for helping out the install.sh codes | [XDA profile](https://forum.xda-developers.com/member.php?u=5332893)
 - @shubbyy for his Ruthless Pixel Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903/)
 - @azaidi for his Rootless Pixel Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/launcher3-pixel-launcher-features-t3620972)
-- @whataudoinghere for his Customized Pixel 2 Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559)
 - @paphonb for his Modded Pixel 2 Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393)
 - @Chronzy for providing the system/vendor/overlay files as well as system/media files from his Pixel 2. | [XDA thread](https://forum.xda-developers.com/showpost.php?p=74267243&postcount=14) 
 - @elmkzgirxp for providing an overlay for the lockscreen font
