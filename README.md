@@ -35,6 +35,7 @@ v5.1
 - Re-include Customized Pixel Launcher in the launcher choices
 - Update sysconfig files from Android P DP3
 - Include permissions from Android P DP3
+- Incclude Sound Picker for 8.0+
 
 v5.0
 - Audio improvements for Xiaomi Mi A1 (use fluencepro and fix talkback for Google Assistant)
