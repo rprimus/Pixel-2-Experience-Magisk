@@ -1,7 +1,8 @@
-# GET AGO/APL/MPL/RPL FROM ZIP NAME
+# GET AGO/APL/CPL/MPL/RPL FROM ZIP NAME
 case $(basename $ZIP) in
   *ago*|*Ago*|*AGO*) LAUNCHER=ago;;
   *apl*|*Apl*|*APL*) LAUNCHER=apl;;
+  *cpl*|*Cpl*|*CPL*) LAUNCHER=cpl;;
   *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
   *rpl*|*Rpl*|*RPL*) LAUNCHER=rpl;;
 esac
@@ -72,7 +73,7 @@ if [ -z $LAUNCHER ]; then
     $FUNCTION "DOWN"
   fi
   ui_print " "
-  ui_print "- Do you want to install a Launcher?"
+  ui_print "- Do you want to install a Launcher? (note: if you encounter a force close, reinstall and choose Vol-)"
   ui_print "   Vol+ = Install Launcher"
   ui_print "   Vol- = Do NOT install a Launcher"
   if $FUNCTION; then
@@ -88,24 +89,34 @@ if [ -z $LAUNCHER ]; then
       ui_print " "
       ui_print " - Select Custom Launcher -"
       ui_print "   Choose which custom Pixel Launcher you want installed:"
-      ui_print "   Vol+ = Ruthless Pixel Launcher, Vol- = Rootless Pixel 2 Launcher"
+      ui_print "   Vol+ = Customized Pixel Launcher, Vol- = Ruthless/Rootless"
       if $FUNCTION; then
         ui_print " "
-        ui_print "   Installing Shubbyy's Ruthless Pixel Launcher..."
-        LAUNCHER=rpl
+        ui_print "   Installing Customized Pixel Launcher..."
+        LAUNCHER=cpl
       else
         ui_print " "
-        ui_print " - Select Rootless Pixel 2 Launcher version -"
-        ui_print "   Choose which version of Amir's Launcher you want installed:"
-        ui_print "   Vol+ = Regular version, Vol- = Android Go version"
+        ui_print " - Select Custom Launcher -"
+        ui_print "   Choose which custom Pixel Launcher you want installed:"
+        ui_print "   Vol+ = Ruthless Pixel Launcher, Vol- = Rootless Pixel 2 Launcher"
         if $FUNCTION; then
           ui_print " "
-          ui_print "   Installing Amir's Rootless Pixel 2 Launcher..."
-          LAUNCHER=apl
+          ui_print "   Installing Shubbyy's Ruthless Pixel Launcher..."
+          LAUNCHER=rpl
         else
           ui_print " "
-          ui_print "   Installing Amir's Rootless Pixel 2 Launcher for Android Go..."
-          LAUNCHER=ago
+          ui_print " - Select Rootless Pixel 2 Launcher version -"
+          ui_print "   Choose which version of Amir's Launcher you want installed:"
+          ui_print "   Vol+ = Regular version, Vol- = Android Go version"
+          if $FUNCTION; then
+            ui_print " "
+            ui_print "   Installing Amir's Rootless Pixel 2 Launcher..."
+            LAUNCHER=apl
+          else
+            ui_print " "
+            ui_print "   Installing Amir's Rootless Pixel 2 Launcher for Android Go..."
+            LAUNCHER=ago
+          fi
         fi
       fi
     fi
