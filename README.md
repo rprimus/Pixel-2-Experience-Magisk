@@ -10,7 +10,7 @@ As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when
 - Rootless Pixel Launcher by [@azaidi](https://forum.xda-developers.com/member.php?u=3012129) | [XDA thread](https://forum.xda-developers.com/android/apps-games/launcher3-pixel-launcher-features-t3620972) | [Telegram channel for Launcher support](https://t.me/launcherthree)
 - Customized Pixel Launcher by [@whataudoinghere](https://forum.xda-developers.com/member.php?u=8880821) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559)
 - Pixel accent (in system/vendor/overlay/Pixel)
-- Google Lens enabled in Google Photos
+- Google Lens (in Assistant and in Google Photos)
 - Google Sans (from Android P DP3) font used in Google Assistant, Pixel Launcher, System Update window, SetupWizard text
 - Latest Emojis from Android P DP3 [Unicode 11.0](https://emojipedia.org/unicode-11.0/)
 - Latest audio files from Android P DP3 (ringtones, notifications, ui, alarms taken from Pixel 2)
@@ -29,6 +29,9 @@ If you encounter bootloop when uninstalling the module, you need to flash the Re
 You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
+v5.2
+- Add Google Lens as system app
+
 v5.1
 - Update audio files with the files from Android P Developer Preview 3
 - Include bootanimation from Pixel Android P DP3
@@ -41,11 +44,6 @@ v5.0
 - Audio improvements for Xiaomi Mi A1 (use fluencepro and fix talkback for Google Assistant)
 - Use Google Sans fonts from Android P Developer Preview 3
 - Replace NotoColorEmoji with latest Emoji pack from Android P Developer Preview 3
-
-v4.9
-- Remove Google Unlimited photo storage (doesn't work; goes against Google Drive storage)
-- Add a few more Pixel XML files
-- Include framework files
 
 ## Latest Launcher versions
 - Customized Pixel Launcher = 1.10 | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559)
