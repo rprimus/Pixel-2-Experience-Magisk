@@ -19,6 +19,7 @@ As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when
 - EIS support
 - Enables Night Light support (device/ROM dependent)
 - Xiaomi Mi A1 audio improvements
+- 2 more separate modules
 
 ## Reminders
 To avoid Launcher being renamed/crashing, disable the launcher you installed and switch to different launcher before disabling/uninstalling the module. Not doing so could result in a “0.0dip has stopped working" bug. If you do encounter this bug, try installing the real Pixel Launcher from the [Google Play store](https://play.google.com/store/apps/details?id=com.google.android.apps.nexuslauncher).
@@ -29,6 +30,11 @@ If you encounter bootloop when uninstalling the module, you need to flash the Re
 You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
+v5.3
+- Update Ruthless launcher | [Telegram](https://t.me/ruthlaunch/344)
+- Removed Emoji font file | [Separate module](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-emojis)
+- Removed bootanimation file | [Seperate module](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-bootanimation)
+
 v5.2
 - Add Google Lens as system app
 
@@ -40,16 +46,16 @@ v5.1
 - Include permissions from Android P DP3
 - Include Sound Picker for 8.0+
 
-v5.0
-- Audio improvements for Xiaomi Mi A1 (use fluencepro and fix talkback for Google Assistant)
-- Use Google Sans fonts from Android P Developer Preview 3
-- Replace NotoColorEmoji with latest Emoji pack from Android P Developer Preview 3
+## Separate modules
+There are now separate Magisk modules for the Emojis and Bootanimation from Android P DP3
+- Emojis [Github](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-emojis)
+- Bootanimation [Github](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-bootanimation)
 
 ## Latest Launcher versions
 - Customized Pixel Launcher = 1.10 | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559)
 - Modded Pixel 2 Launcher = 6 build 17 | [Telegram channel](https://t.me/getMpl)
 - Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks)
-- Ruthless Pixel Launcher = 2.0 | [Telegram channel](https://t.me/ruthlaunch)
+- Ruthless Pixel Launcher = 2.1 | [Telegram channel](https://t.me/ruthlaunch)
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/showpost.php?p=75731833&postcount=2)
 
