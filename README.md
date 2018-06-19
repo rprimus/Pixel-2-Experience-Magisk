@@ -12,8 +12,6 @@ As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when
 - Pixel accent (in system/vendor/overlay/Pixel)
 - Google Lens (in Assistant and in Google Photos)
 - Google Sans (from Android P DP3) font used in Google Assistant, Pixel Launcher, System Update window, SetupWizard text
-- Latest Emojis from Android P DP3 [Unicode 11.0](https://emojipedia.org/unicode-11.0/)
-- Latest audio files from Android P DP3 (ringtones, notifications, ui, alarms taken from Pixel 2)
 - Enable Google Assistant via build.prop
 - Camera2 API support (find a working Modded Google Camera app [here](https://www.celsoazevedo.com/files/android/google-camera/))
 - EIS support
