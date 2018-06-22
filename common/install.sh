@@ -1,5 +1,6 @@
-# GET APL/CPL/MPL/RPL FROM ZIP NAME
+# GET AGO/APL/CPL/MPL/RPL FROM ZIP NAME
 case $(basename $ZIP) in
+  *ago*|*Ago*|*AGO*) LAUNCHER=ago;;
   *apl*|*Apl*|*APL*) LAUNCHER=apl;;
   *cpl*|*Cpl*|*CPL*) LAUNCHER=cpl;;
   *mpl*|*Mpl*|*MPL*) LAUNCHER=mpl;;
@@ -9,12 +10,19 @@ esac
 # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
 chmod 755 $INSTALLER/common/keycheck
 
+# remove /data/resource-cache/overlays.list
+OVERLAY='/data/resource-cache/overlays.list'
+if [ -f "$OVERLAY" ] ;then
+  ui_print "   Removing $OVERLAY"
+  rm -f "$OVERLAY"
+fi
+
 keytest() {
   ui_print " - Vol Key Test -"
   ui_print "   Press Vol Up:"
   (/system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $INSTALLER/events) || return 1
   return 0
-}   
+}
 
 chooseport() {
   #note from chainfire @xda-developers: getevent behaves weird when piped, and busybox grep likes that even less than toolbox/toybox grep
@@ -65,42 +73,52 @@ if [ -z $LAUNCHER ]; then
     $FUNCTION "DOWN"
   fi
   ui_print " "
-  ui_print "- Do you want to install a Launcher?"
+  ui_print "- Do you want to install a Launcher? (note: if you encounter a force close, reinstall and choose Vol-)"
   ui_print "   Vol+ = Install Launcher"
   ui_print "   Vol- = Do NOT install a Launcher"
   if $FUNCTION; then
     ui_print " "
     ui_print " - Select Launcher -"
     ui_print "   Choose which Pixel Launcher you want installed:"
-    ui_print "   Vol+ = Stock, Vol- = Custom Launcher choices"
-    if $FUNCTION; then 
+    ui_print "   Vol+ = Modded Pixel 2 Launcher, Vol- = Other Launcher choices"
+    if $FUNCTION; then
       ui_print " "
       ui_print "   Installing paphonb's Modded Pixel 2 Launcher..."
       LAUNCHER=mpl
-    else 
+    else
       ui_print " "
       ui_print " - Select Custom Launcher -"
       ui_print "   Choose which custom Pixel Launcher you want installed:"
-      ui_print "   Vol+ = Shubbyy's Ruthless Pixel Launcher, Vol- = More options"
+      ui_print "   Vol+ = Customized Pixel Launcher, Vol- = Ruthless/Rootless"
       if $FUNCTION; then
         ui_print " "
-        ui_print "   Installing Shubbyy's Ruthless Pixel Launcher..."
-        LAUNCHER=rpl
+        ui_print "   Installing Customized Pixel Launcher..."
+        LAUNCHER=cpl
       else
         ui_print " "
         ui_print " - Select Custom Launcher -"
         ui_print "   Choose which custom Pixel Launcher you want installed:"
-        ui_print "   Vol+ = Amir's Rootless Pixel 2 Launcher, Vol- = Customized Pixel Launcher"
+        ui_print "   Vol+ = Ruthless Pixel Launcher, Vol- = Rootless Pixel 2 Launcher"
         if $FUNCTION; then
           ui_print " "
-          ui_print "   Installing Amir's Rootless Pixel 2 Launcher..."
-          LAUNCHER=apl
+          ui_print "   Installing Shubbyy's Ruthless Pixel Launcher..."
+          LAUNCHER=rpl
         else
           ui_print " "
-          ui_print "   Installing Customized Pixel Launcher..."
-          LAUNCHER=cpl
+          ui_print " - Select Rootless Pixel 2 Launcher version -"
+          ui_print "   Choose which version of Amir's Launcher you want installed:"
+          ui_print "   Vol+ = Regular version, Vol- = Android Go version"
+          if $FUNCTION; then
+            ui_print " "
+            ui_print "   Installing Amir's Rootless Pixel 2 Launcher..."
+            LAUNCHER=apl
+          else
+            ui_print " "
+            ui_print "   Installing Amir's Rootless Pixel 2 Launcher for Android Go..."
+            LAUNCHER=ago
+          fi
         fi
-      fi     
+      fi
     fi
   else
     ui_print "   Skip installing launchers..."
@@ -110,8 +128,8 @@ else
 fi
 
 if [ ! -z $LAUNCHER ]; then
-  mkdir -p $INSTALLER/system/priv-app/Pixel2Launcher
-  cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/Pixel2Launcher/Pixel2Launcher.apk
+  mkdir -p $INSTALLER/system/priv-app/NexusLauncherPrebuilt
+  cp -f $INSTALLER/custom/$LAUNCHER/PixelLauncher.apk $INSTALLER/system/priv-app/NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk
 fi
 
 # backup

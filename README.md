@@ -1,56 +1,56 @@
-# Pixel 2 Experience
-I made a compilation of the different mods and came up with this Pixel 2 Experience module which can be flashed with other devices on Nougat.
+# Pixel Experience
+I made a compilation of the different mods and came up with this Pixel Experience module which can be flashed with other devices on Nougat.
 
 ## Information
 As a Mi A1 user, I was stuck with Stock Oreo 8.0.0 without Oreo custom ROMs when I first bought my device. Kernel sources weren't released at the time so I decided if I can cook up a Magisk module that can bring me the Pixel Experience ROM without the need to install that certain ROM. What I did is to search around the internet which lead me to several mods on XDA, GitHub and other websites which have extracted files from the Pixel 2 devices. I've decided to gather them and compiled them all into a single Magisk Module. This module can be flashed with other devices on Nougat and above as well.
 
 ## Features
-- Customized Pixel 2 Launcher by [@whataudoinghere](https://forum.xda-developers.com/member.php?u=8880821) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559) | [Telegram channel for Launcher support](https://t.me/CPL_discussion_group)
+- Ruthless (Pixel 2) Launcher by [@shubbyy](https://forum.xda-developers.com/member.php?u=6086799) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903) | [Telegram channel for Launcher support](https://t.me/RPLauncher)
 - Modded Pixel 2 Launcher by [@paphonb](https://forum.xda-developers.com/member.php?u=6018897) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393) | [Telegram channel for Launcher support](https://t.me/MPixelLauncher2)
 - Rootless Pixel Launcher by [@azaidi](https://forum.xda-developers.com/member.php?u=3012129) | [XDA thread](https://forum.xda-developers.com/android/apps-games/launcher3-pixel-launcher-features-t3620972) | [Telegram channel for Launcher support](https://t.me/launcherthree)
-- Ruthless (Pixel 2) Launcher by [@shubbyy](https://forum.xda-developers.com/member.php?u=6086799) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903) | [Telegram channel for Launcher support](https://t.me/RPLauncher)
+- Customized Pixel Launcher by [@whataudoinghere](https://forum.xda-developers.com/member.php?u=8880821) | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559)
 - Pixel accent (in system/vendor/overlay/Pixel)
-- Google Lens enabled in Google Photos
-- Google Sans font used in Google Assistant, Pixel Launcher, System Update window, SetupWizard text, lockscreen clock
-- Pixel 2 audio (ringtones, notifications, ui, alarms)
+- Google Lens (in Assistant and in Google Photos)
+- Google Sans (from Android P DP3) font used in Google Assistant, Pixel Launcher, System Update window, SetupWizard text
 - Enable Google Assistant via build.prop
 - Camera2 API support (find a working Modded Google Camera app [here](https://www.celsoazevedo.com/files/android/google-camera/))
 - EIS support
-- Enables Night Light support
+- Enables Night Light support (device/ROM dependent)
+- Xiaomi Mi A1 audio improvements
+- 2 more separate modules
 
 ## Reminders
-To avoid Launcher being renamed/crashing, allow Phone and Storage permissions via Settings app.
+To avoid Launcher being renamed/crashing, disable the launcher you installed and switch to different launcher before disabling/uninstalling the module. Not doing so could result in a “0.0dip has stopped working" bug. If you do encounter this bug, try installing the real Pixel Launcher from the [Google Play store](https://play.google.com/store/apps/details?id=com.google.android.apps.nexuslauncher).
+
+If you encounter bootloop when uninstalling the module, you need to flash the Rescue zip found [here](https://androidfilehost.com/?fid=673368273298925325) to disable all overlays. You should be able to reboot without any problems afterwards!
 
 ## Support
-You may report any bugs via the new [Telegram channel](https://t.me/Pixel2Experience)
+You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
-v4.1
-- Revert some changes from v4.0 to fix bugs
+v5.4
+- Update Ruthless Launcher to 2.2 | [Telegram](https://t.me/ruthlaunch/362)
+- Update Amir's Launcher 3 | [Telegram](https://t.me/appforks/837)
+- Update Google Lens | [APK Mirror](https://www.apkmirror.com/apk/google-inc/google-lens/google-lens-1-0-180517199-release/google-lens-1-0-180517199-android-apk-download/)
 
-v4.0
-- Removed the google unlimited storage dialog (try clearing the cache of your Google Photos app)
-- Moved NightLight and PixelThemeOverlay from their respective folders to the root of system/vendor/overlay
-- Add Circle icons mask for full Pixel Launcher effect
-- Re-add Google Sans font for Lockscreen clock
-- Update Modded Pixel Launcher to version 5.3 build 17 | [Telegram](https://t.me/getMpl/14)
-- Update GoogleSans-Regular.ttf (should fix colons in Google Sans lockscreen clock font)
+v5.3
+- Update Ruthless launcher | [Telegram](https://t.me/ruthlaunch/344)
+- Removed Emoji font file | [Separate module](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-emojis)
+- Removed bootanimation file | [Seperate module](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-bootanimation)
 
-v3.9
-- Changed NPL folder into CPL to reflect Customized Pixel Launcher name
-- Updated CPL to latest version (v1.7.5) | [Changelog](https://t.me/CPL_update_channel/31) | [APK](https://t.me/CPL_update_channel/32)
-- Updated Rootless Pixel Launcher | [Latest](https://t.me/appforks/806)
-- Updated Ruthless Pixe Launcher | [Latest](https://t.me/ruthlaunch/200)
+v5.2
+- Add Google Lens as system app
 
-v3.8
-- Execute launcher backup feature before uninstalling module
-- Update Amir's Launcher | https://t.me/appforks/805
+## Separate modules
+There are now separate Magisk modules for the Emojis and Bootanimation from Android P DP3
+- Emojis [Github](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-emojis)
+- Bootanimation [Github](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-bootanimation)
 
 ## Latest Launcher versions
-- Customized Pixel Launcher = 1.7.4
-- Modded Pixel 2 Launcher = 5.3.0 build 17 | [Telegram channel](https://t.me/getMpl)
+- Customized Pixel Launcher = 1.10 | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559)
+- Modded Pixel 2 Launcher = 6 build 17 | [Telegram channel](https://t.me/getMpl)
 - Rootless Pixel Launcher = 3.5 | [Telegram channel](https://t.me/appforks)
-- Ruthless Pixel Launcher = Ass-gaurd (thor's home) | [Telegram channel](https://t.me/ruthlaunch)
+- Ruthless Pixel Launcher = 2.1 | [Telegram channel](https://t.me/ruthlaunch)
 
 For old changelogs, check on the [XDA Thread](https://forum.xda-developers.com/showpost.php?p=75731833&postcount=2)
 
@@ -60,9 +60,6 @@ You need to type this code via adb (connect your device to the PC with USB Debug
 adb shell cmd overlay enable --user 0 android.res.night
 
 then reboot your device.
-
-## PROPER STEPS TO UNINSTALL MODULE
-In order to avoid bootloops after removing the module, you will need to remove all overlays. Go to Magisk Manager and uninstall the module then reboot to TWRP. Flash the Rescue zip found [here](https://drive.google.com/file/d/1iQ1FPdZElIqisCQPwJIIknnMh8UOwSjD/view?usp=drivesdk) to remove all remaining overlays. You should be able to reboot without any problems afterwards!
 
 ## Compatibility
 - Asus Zenfone 2 Selfie, running RR 5.8.5 (Android 7.1.2)
@@ -105,12 +102,13 @@ Provide feedback via the XDA thread by inputting your phone model, current ROM. 
 
 ## Thanks
 Thanks to these people!
+- @Shooting Star Max for the font files from Android P Dev Preview 3
+- @rprimus for helping out with the overlay.list issues to avoid system not booting issue in previous builds
 - @tohtorin for helping out with the Unity script | [XDA profile](https://forum.xda-developers.com/member.php?u=7547198)
 - @Zackptg5 for helping out with the Unity Installer | [XDA guide](https://forum.xda-developers.com/android/software/guide-volume-key-selection-flashable-zip-t3773410)
 - @Rom for helping out the install.sh codes | [XDA profile](https://forum.xda-developers.com/member.php?u=5332893)
 - @shubbyy for his Ruthless Pixel Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-ruthless-pixel-launcher-based-t3755903/)
 - @azaidi for his Rootless Pixel Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/launcher3-pixel-launcher-features-t3620972)
-- @whataudoinghere for his Customized Pixel 2 Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-fork-aosp-version-launcher-3-t3746559)
 - @paphonb for his Modded Pixel 2 Launcher | [XDA thread](https://forum.xda-developers.com/android/apps-games/app-rootless-pixel-2-launcher-google-t3688393)
 - @Chronzy for providing the system/vendor/overlay files as well as system/media files from his Pixel 2. | [XDA thread](https://forum.xda-developers.com/showpost.php?p=74267243&postcount=14) 
 - @elmkzgirxp for providing an overlay for the lockscreen font
@@ -120,6 +118,7 @@ Thanks to these people!
 LICENSE
 Copyright © 2018 joeyhuab. Licensed under the GNU General Public License v3.
 
-## [XDA Portal feature](https://www.xda-developers.com/pixel-2-experience-magisk-module/)
+## [Pixel Experience XDA Portal feature](https://www.xda-developers.com/pixel-2-experience-magisk-module/)
+## [Android P Emojis & Fonts XDA Portal feature](https://www.xda-developers.com/android-p-emoji-fonts-magisk-module/)
 ## [XDA Official thread](https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/)
 ## [Github source](https://github.com/joeyhuab/Pixel-2-Experience-Magisk/)
