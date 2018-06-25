@@ -39,9 +39,9 @@ LATESTARTSERVICE=true
 # Unity Variables
 # Uncomment and change 'MINAPI' and 'MAXAPI' to the minimum and maxium android version for your mod (note that magisk has it's own minimum api: 21 (lollipop))
 # Uncomment DYNAMICOREO if you want apps and libs installed to vendor for oreo and newer and system for anything older
-#MINAPI=21
+MINAPI=23
 #MAXAPI=25
-#DYNAMICOREO=true
+DYNAMICOREO=true
 
 # Custom Variables - Keep everything within this function
 unity_custom() {
