@@ -6,4 +6,4 @@ author=Joey Huab (Stallixx) with help from R Primus, tohtorin, Zackptg5, Hikikob
 description=Ports Pixel exclusive features; includes 4 different Pixel Launchers mods (w/ one Android Go version), Pixel theme accent, Android P DP3 audio files; Android P DP3 Google Sans font in Assistant, System update window and Setup Wizard app; Google Lens (in Assistant and in Google Photos), enable Pixel Wallpapers, Camera2 API and EIS support (varies per device)
 support=https://forum.xda-developers.com/apps/magisk/module-pixel-2-experience-t3757137/
 donate=https://github.com/joeyhuab/Pixel-Experience-Magisk
-minMagisk=1530
+minMagisk=15-0
