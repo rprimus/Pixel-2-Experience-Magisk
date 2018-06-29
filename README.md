@@ -28,6 +28,10 @@ If you encounter bootloop when uninstalling the module, you need to flash the Re
 You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
 
 ## Latest changelog
+v5.5
+- Update Ruthless Launcher to 2.3
+- Update Amir's Launcher 3
+
 v5.4
 - Update Ruthless Launcher to 2.2 | [Telegram](https://t.me/ruthlaunch/362)
 - Update Amir's Launcher 3 | [Telegram](https://t.me/appforks/837)
@@ -37,9 +41,6 @@ v5.3
 - Update Ruthless launcher | [Telegram](https://t.me/ruthlaunch/344)
 - Removed Emoji font file | [Separate module](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-emojis)
 - Removed bootanimation file | [Seperate module](https://github.com/joeyhuab/Android-P-Fonts-Emojis/releases/tag/v1-bootanimation)
-
-v5.2
-- Add Google Lens as system app
 
 ## Separate modules
 There are now separate Magisk modules for the Emojis and Bootanimation from Android P DP3
