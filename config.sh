@@ -59,7 +59,7 @@ print_modname() {
   ui_print "    *****************************************"
   ui_print "    *            Pixel Experience           *"
   ui_print "    *****************************************"
-  ui_print "    *                  v5.5                 *"
+  ui_print "    *                   5.6                 *"
   ui_print "    *                Joey Huab              *"
   ui_print "    *******************************************"
   ui_print " "
