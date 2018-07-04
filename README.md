@@ -27,8 +27,11 @@ If you encounter bootloop when uninstalling the module, you need to flash the Re
 ## Support
 You may report any bugs via the new [Telegram channel](https://t.me/PXMagisk)
 
-## Latest changelog
-v5.6
+## Changelog
+### v5.7 - 7.4.2018
+- Fixes for RIL
+
+### v5.6
 - Update Ruthless Launcher to 2.4
 - Update Customized Pixel Launcher to 1.10.3
 - Update Sound Picker from Android P DP4 (Oreo and above only)
@@ -36,14 +39,9 @@ v5.6
 - Update sysconfig XML files from DP4
 - Update framework jar files from DP4
 
-v5.5
+### v5.5
 - Update Ruthless Launcher to 2.3
 - Update Amir's Launcher 3
-
-v5.4
-- Update Ruthless Launcher to 2.2 | [Telegram](https://t.me/ruthlaunch/362)
-- Update Amir's Launcher 3 | [Telegram](https://t.me/appforks/837)
-- Update Google Lens | [APK Mirror](https://www.apkmirror.com/apk/google-inc/google-lens/google-lens-1-0-180517199-release/google-lens-1-0-180517199-android-apk-download/)
 
 ## Separate modules
 There are now separate Magisk modules for the Emojis and Bootanimation from Android P DP3
